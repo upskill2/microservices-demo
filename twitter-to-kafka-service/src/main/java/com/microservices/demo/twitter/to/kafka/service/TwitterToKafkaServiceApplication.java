@@ -20,10 +20,7 @@ public class TwitterToKafkaServiceApplication implements CommandLineRunner {
     @Autowired
     private TwitterToKafkaServiceConfigData twitterToKafkaServiceConfigData;
     @Autowired
-    private TwitterV2KafkaStreamRunner streamRunner;
-
-    @Autowired
-    private TwitterV2KafkaStreamRunner twitterV2KafkaStreamRunner;
+    private StreamRunner streamRunner;
 
     public static void main (String[] args) {
         SpringApplication.run (TwitterToKafkaServiceApplication.class, args);

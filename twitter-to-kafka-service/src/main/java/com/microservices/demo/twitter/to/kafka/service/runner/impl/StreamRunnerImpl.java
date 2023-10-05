@@ -6,6 +6,7 @@ import com.microservices.demo.twitter.to.kafka.service.runner.StreamRunner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.stereotype.Component;
 import twitter4j.FilterQuery;
 import twitter4j.TwitterException;
@@ -15,12 +16,10 @@ import twitter4j.TwitterStreamFactory;
 import javax.annotation.PreDestroy;
 
 @Component
+@ConditionalOnProperty (name = "twitter-to-kafka-service.enable-v0-tweets", havingValue = "true", matchIfMissing = false)
 public class StreamRunnerImpl implements StreamRunner {
-    @Override
-    public void start () throws TwitterException {
-    }
 
- /*   private static final Logger LOGGER = LoggerFactory.getLogger (StreamRunnerImpl.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger (StreamRunnerImpl.class);
     @Autowired
     private TwitterKafkaStatusListener twitterKafkaStatusListener;
     @Autowired
@@ -36,8 +35,8 @@ public class StreamRunnerImpl implements StreamRunner {
     }
 
     @PreDestroy
-    public void shutDown(){
-        if(twitterStream !=null){
+    public void shutDown () {
+        if (twitterStream != null) {
             LOGGER.info ("Closing twitter stream");
             twitterStream.shutdown ();
         }
@@ -48,5 +47,5 @@ public class StreamRunnerImpl implements StreamRunner {
         FilterQuery filterQuery = new FilterQuery (keywords);
         twitterStream.filter (filterQuery);
         LOGGER.info ("Started filtering twitter stream for keywords {}", twitterToKafkaServiceConfigData.getTwitterKeyWords ());
-    }*/
+    }
 }

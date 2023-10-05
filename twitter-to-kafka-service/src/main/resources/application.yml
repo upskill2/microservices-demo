@@ -6,7 +6,7 @@ twitter-to-kafka-service:
     - Spring
     - Kafka
     - Elasticsearch
-  enable-v2-tweets: true
+  enable-v2-tweets: false
   enable-v0-tweets: false
   enable-mock-tweets: true
   mock-min-tweet-length: 5

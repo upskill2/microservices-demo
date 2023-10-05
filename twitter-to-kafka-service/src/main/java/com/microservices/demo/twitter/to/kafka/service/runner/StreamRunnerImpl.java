@@ -24,11 +24,6 @@ public class StreamRunnerImpl implements StreamRunner {
 
     private TwitterStream twitterStream;
 
-/*    public StreamRunnerImpl (final TwitterKafkaStatusListener twitterKafkaStatusListener, final TwitterToKafkaServiceDataConfig twitterToKafkaServiceDataConfig) {
-        this.twitterKafkaStatusListener = twitterKafkaStatusListener;
-        this.twitterToKafkaServiceDataConfig = twitterToKafkaServiceDataConfig;
-    }*/
-
     @Override
     public void start () throws TwitterException {
         twitterStream = new TwitterStreamFactory ().getInstance ();

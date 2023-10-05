@@ -1,7 +1,8 @@
-package com.microservices.demo.twitter.to.kafka.service.runner;
+package com.microservices.demo.twitter.to.kafka.service.runner.impl;
 
-import com.microservices.demo.twitter.to.kafka.service.config.TwitterToKafkaServiceDataConfig;
+import com.microservices.demo.twitter.to.kafka.service.config.TwitterToKafkaServiceConfigData;
 import com.microservices.demo.twitter.to.kafka.service.listener.TwitterKafkaStatusListener;
+import com.microservices.demo.twitter.to.kafka.service.runner.StreamRunner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,12 +16,15 @@ import javax.annotation.PreDestroy;
 
 @Component
 public class StreamRunnerImpl implements StreamRunner {
+    @Override
+    public void start () throws TwitterException {
+    }
 
-    private static final Logger LOGGER = LoggerFactory.getLogger (StreamRunnerImpl.class);
+ /*   private static final Logger LOGGER = LoggerFactory.getLogger (StreamRunnerImpl.class);
     @Autowired
     private TwitterKafkaStatusListener twitterKafkaStatusListener;
     @Autowired
-    private TwitterToKafkaServiceDataConfig twitterToKafkaServiceDataConfig;
+    private TwitterToKafkaServiceConfigData twitterToKafkaServiceConfigData;
 
     private TwitterStream twitterStream;
 
@@ -40,9 +44,9 @@ public class StreamRunnerImpl implements StreamRunner {
     }
 
     private void addFilter () {
-        String[] keywords = twitterToKafkaServiceDataConfig.getTwitterKeyWords ().toArray (new String[0]);
+        String[] keywords = twitterToKafkaServiceConfigData.getTwitterKeyWords ().toArray (new String[0]);
         FilterQuery filterQuery = new FilterQuery (keywords);
         twitterStream.filter (filterQuery);
-        LOGGER.info ("Started filtering twitter stream for keywords {}", twitterToKafkaServiceDataConfig.getTwitterKeyWords ());
-    }
+        LOGGER.info ("Started filtering twitter stream for keywords {}", twitterToKafkaServiceConfigData.getTwitterKeyWords ());
+    }*/
 }

@@ -1,14 +1,11 @@
 package com.microservices.demo.common.config;
 
-import jdk.jfr.DataAmount;
-import lombok.Data;
+import com.microservices.demo.config.RetryConfigData;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.retry.backoff.BackOffPolicy;
 import org.springframework.retry.backoff.ExponentialBackOffPolicy;
 import org.springframework.retry.policy.SimpleRetryPolicy;
 import org.springframework.retry.support.RetryTemplate;
-import org.springframework.util.backoff.ExponentialBackOff;
 
 @Configuration
 public class RetryConfig {

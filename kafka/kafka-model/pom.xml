@@ -9,7 +9,7 @@
     </parent>
 
     <artifactId>kafka-model</artifactId>
-    <packaging>jar</packaging>
+<!--    <packaging>jar</packaging>-->
     <name>kafaka-admin</name>
 
     <dependencies>

@@ -20,6 +20,7 @@
         <module>kafka/kafka-model</module>
         <module>kafka/kafka-admin</module>
         <module>kafka/kafka-producer</module>
+        <module>common-config</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -32,11 +33,47 @@
         <httpclient.version>4.5.13</httpclient.version>
         <json.version>20220320</json.version>
         <avro.version>1.11.3</avro.version>
+        <kafka.version>3.0.11</kafka.version>
+        <kafka-client.version>3.6.0</kafka-client.version>
+        <spring-retry.version>2.0.3</spring-retry.version>
+        <spring-starter-aop.version>3.1.4</spring-starter-aop.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
 
+            <dependency>
+                <groupId>com.microservices.demo</groupId>
+                <artifactId>app-config-data</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.microservices.demo</groupId>
+                <artifactId>common-config</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.kafka</groupId>
+                <artifactId>spring-kafka</artifactId>
+                <version>${kafka.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.kafka</groupId>
+                <artifactId>kafka-clients</artifactId>
+                <version>${kafka-client.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.retry</groupId>
+                <artifactId>spring-retry</artifactId>
+                <version>${spring-retry.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-aop</artifactId>
+                <version>${spring-starter-aop.version}</version>
+            </dependency>
             <dependency>
                 <groupId>org.apache.avro</groupId>
                 <artifactId>avro</artifactId>
@@ -79,17 +116,6 @@
                 <artifactId>lombok</artifactId>
                 <version>${org.projectlombok.version}</version>
                 <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.twitter4j</groupId>
-                <artifactId>twitter4j-stream</artifactId>
-                <version>${twitter4j.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.apache.httpcomponents</groupId>
-                <artifactId>httpclient</artifactId>
-                <version>${httpclient.version}</version>
             </dependency>
 
         </dependencies>

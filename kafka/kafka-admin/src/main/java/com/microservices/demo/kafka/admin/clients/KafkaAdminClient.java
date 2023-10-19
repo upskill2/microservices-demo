@@ -8,8 +8,6 @@ import org.apache.kafka.clients.admin.AdminClient;
 import org.apache.kafka.clients.admin.CreateTopicsResult;
 import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.clients.admin.TopicListing;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.retry.RetryContext;
@@ -73,7 +71,7 @@ public class KafkaAdminClient {
         Integer multiplier = retryConfigData.getMultiplier ();
         Long sleepTimsMs = retryConfigData.getMaxIntervalMs ();
 
-        for (String topic : kafkaConfigData.getTopicsToCreate ()) {
+        for (String topic : kafkaConfigData.getTopicNamesToCreate ()) {
             while (!isTopicCreated (topics, topic)) {
                 checkMaxRetry (retryCount++, maxRetry);
                 sleep (sleepTimsMs);
@@ -97,7 +95,7 @@ public class KafkaAdminClient {
     }
 
     private CreateTopicsResult doCreateTopics (RetryContext retryContext) {
-        List<String> topicNames = kafkaConfigData.getTopicsToCreate ();
+        List<String> topicNames = kafkaConfigData.getTopicNamesToCreate ();
         log.info ("Creating: {} topics(s), attemp: {}", topicNames, retryContext.getRetryCount ());
 
         List<NewTopic> kafkaTopic = topicNames.stream ().map (topic -> new NewTopic (
@@ -142,7 +140,7 @@ public class KafkaAdminClient {
     }
 
     private Collection<TopicListing> doGetTopics (RetryContext retryContext) {
-        log.info ("Reading: {} topics(s), attemp: {}", kafkaConfigData.getTopicsToCreate ().toArray (),
+        log.info ("Reading: {} topics(s), attemp: {}", kafkaConfigData.getTopicNamesToCreate ().toArray (),
                 retryContext.getRetryCount ());
         Collection<TopicListing> topics = null;
         try {

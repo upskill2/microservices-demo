@@ -2,19 +2,21 @@ package com.microservices.demo.kafka.admin.clients;
 
 import com.microservices.demo.config.KafkaConfigData;
 import com.microservices.demo.config.RetryConfigData;
-import com.microservices.demo.kafka.admin.exceptions.KafkaClientExceptions;
+import com.microservices.demo.kafka.admin.exception.KafkaClientException;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.admin.AdminClient;
 import org.apache.kafka.clients.admin.CreateTopicsResult;
 import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.clients.admin.TopicListing;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.retry.RetryContext;
 import org.springframework.retry.support.RetryTemplate;
 import org.springframework.stereotype.Component;
+import org.springframework.web.reactive.function.client.ClientResponse;
 import org.springframework.web.reactive.function.client.WebClient;
-import reactor.core.publisher.Mono;
 
 import java.util.Collection;
 import java.util.List;
@@ -47,7 +49,7 @@ public class KafkaAdminClient {
         try {
             createTopicsResult = retryTemplate.execute (this::doCreateTopics);
         } catch (Throwable e) {
-            throw new KafkaClientExceptions ("Reached max number of retry for creating kafka topic(s)", e);
+            throw new KafkaClientException ("Reached max number of retry for creating kafka topic(s)", e);
         }
         checkTopicCreated ();
     }
@@ -57,12 +59,11 @@ public class KafkaAdminClient {
         Integer multiplier = retryConfigData.getMultiplier ();
         Long sleepTimsMs = retryConfigData.getMaxIntervalMs ();
 
-        while (!getShemaRegistryStatus ().is2xxSuccessful ()) {
+        while (!getSchemaRegistryStatus ().is2xxSuccessful ()) {
             checkMaxRetry (retryCount++, maxRetry);
             sleep (sleepTimsMs);
             sleepTimsMs *= multiplier;
         }
-
     }
 
     public void checkTopicCreated () {
@@ -82,13 +83,14 @@ public class KafkaAdminClient {
         }
     }
 
-    private HttpStatus getShemaRegistryStatus () {
+    private HttpStatus getSchemaRegistryStatus() {
         try {
             return webClient
-                    .method (HttpMethod.GET)
-                    .uri (kafkaConfigData.getSchemaRegistryUrl ())
-                    .exchangeToMono (clientResponse -> Mono.just (clientResponse.statusCode ()))
-                    .block ();
+                    .method(HttpMethod.GET)
+                    .uri(kafkaConfigData.getSchemaRegistryUrl())
+                    .exchange()
+                    .map(ClientResponse::statusCode)
+                    .block();
         } catch (Exception e) {
             return HttpStatus.SERVICE_UNAVAILABLE;
         }
@@ -110,13 +112,13 @@ public class KafkaAdminClient {
         try {
             Thread.sleep (sleepTimsMs);
         } catch (InterruptedException e) {
-            throw new KafkaClientExceptions ("error while thread sleep");
+            throw new KafkaClientException ("error while thread sleep");
         }
     }
 
     private void checkMaxRetry (final int i, final Integer maxRetry) {
         if (i > maxRetry) {
-            throw new KafkaClientExceptions ("Reached max number of retries for reading kafka topic(s)");
+            throw new KafkaClientException ("Reached max number of retries for reading kafka topic(s)");
 
         }
     }
@@ -134,7 +136,7 @@ public class KafkaAdminClient {
         try {
             topics = retryTemplate.execute (this::doGetTopics);
         } catch (Throwable e) {
-            throw new KafkaClientExceptions ("Reached max number of retry for reading kafka topic(s)", e);
+            throw new KafkaClientException ("Reached max number of retry for reading kafka topic(s)", e);
         }
         return topics;
     }
@@ -146,7 +148,7 @@ public class KafkaAdminClient {
         try {
             topics = adminClient.listTopics ().listings ().get ();
         } catch (InterruptedException | ExecutionException e) {
-            throw new KafkaClientExceptions ("Kafka topics are absent", e);
+            throw new KafkaClientException ("Kafka topics are absent", e);
         }
         if (topics != null) {
             topics.forEach (topic -> log.info ("Topic with name {}", topic.name ()));

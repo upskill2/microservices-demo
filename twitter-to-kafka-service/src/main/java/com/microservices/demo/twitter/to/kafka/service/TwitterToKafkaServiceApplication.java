@@ -1,10 +1,9 @@
 package com.microservices.demo.twitter.to.kafka.service;
 
-import com.microservices.demo.config.TwitterToKafkaServiceConfigData;
+import com.microservices.demo.twitter.to.kafka.service.init.StreamInitializer;
 import com.microservices.demo.twitter.to.kafka.service.runner.StreamRunner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -15,10 +14,14 @@ import org.springframework.context.annotation.ComponentScan;
 public class TwitterToKafkaServiceApplication implements CommandLineRunner {
     private static final Logger LOG = LoggerFactory.getLogger (TwitterToKafkaServiceApplication.class);
 
-    @Autowired
-    private TwitterToKafkaServiceConfigData twitterToKafkaServiceConfigData;
-    @Autowired
-    private StreamRunner streamRunner;
+    private final StreamRunner streamRunner;
+
+    private final StreamInitializer streamInitializer;
+
+    public TwitterToKafkaServiceApplication (final StreamRunner streamRunner, final StreamInitializer streamInitializer) {
+        this.streamRunner = streamRunner;
+        this.streamInitializer = streamInitializer;
+    }
 
     public static void main (String[] args) {
         SpringApplication.run (TwitterToKafkaServiceApplication.class, args);
@@ -26,9 +29,8 @@ public class TwitterToKafkaServiceApplication implements CommandLineRunner {
 
     @Override
     public void run (final String... args) throws Exception {
-        LOG.info (twitterToKafkaServiceConfigData.getWelcomeMessage ());
-        LOG.info ("Loaded twitter keywords: {}", twitterToKafkaServiceConfigData.getTwitterKeyWords ());
-
+        LOG.info ("EXECUTING : command line runner");
+        streamInitializer.init ();
         streamRunner.start ();
     }
 

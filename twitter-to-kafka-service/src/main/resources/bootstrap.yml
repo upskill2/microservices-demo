@@ -9,7 +9,3 @@ spring:
       uri: http://localhost:8888
       username: user
       password: ENC(JoK2YiDU6ju3SO7QZrwvFDVouxjTBMSkxJkvMpTfWmO0ztZ2m7ncjvSsebFsD9cR)
-
-jasypt:
-  encryptor:
-    password: ${JASYPT_ENCRYPTOR_PASSWORD}

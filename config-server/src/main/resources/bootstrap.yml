@@ -13,3 +13,7 @@ spring:
           password: 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
           clone-on-start: true
     fail-fast: true
+  security:
+    user:
+      name: user
+      password: 123

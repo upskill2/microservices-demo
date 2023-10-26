@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          #uri: file:///home/tc/IdeaProjects/microservices-demo/config-server-repository/
+          uri: https://github.com/upskill2/config-server-repository
+          default-label: main
+          skipSslValidation: true
+          username: upskill2
+          password: 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
+          clone-on-start: true
+    fail-fast: true

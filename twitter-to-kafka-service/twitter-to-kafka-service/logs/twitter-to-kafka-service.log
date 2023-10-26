@@ -1,0 +1,177 @@
+2023-10-19 14:23:31 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTest], using SpringBootContextLoader
+2023-10-19 14:23:31 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-10-19 14:23:31 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTest]: TwitterToKafkaServiceApplicationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-10-19 14:23:31 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication for test class com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTest
+2023-10-19 14:23:31 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2023-10-19 14:23:31 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5bda80bf, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@71e5f61d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2ce86164, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5e8f9e2d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@51df223b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@fd46303, org.springframework.test.context.event.EventPublishingTestExecutionListener@60d8c0dc, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4204541c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6a62689d, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4602c2a9, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@60fa3495, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3e2822, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@79e18e38]
+2023-10-19 14:23:31 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/home/tc/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/home/tc/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2023-10-19 14:23:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplicationTest - Starting TwitterToKafkaServiceApplicationTest on LVILAP0012 with PID 10378 (started by tc in /home/tc/IdeaProjects/microservices-demo/twitter-to-kafka-service)
+2023-10-19 14:23:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplicationTest - No active profile set, falling back to default profiles: default
+2023-10-19 14:23:32 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-10-19 14:23:32 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2023-10-19 14:23:32 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2023-10-19 14:23:32 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1697714612762
+2023-10-19 14:23:33 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplicationTest - Started TwitterToKafkaServiceApplicationTest in 1.647 seconds (JVM running for 2.531)
+2023-10-19 14:23:33 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - EXECUTING : command line runner
+2023-10-19 14:23:33 [main] INFO  c.m.d.k.a.clients.KafkaAdminClient - Creating: [twitter-topic] topics(s), attemp: 0
+2023-10-19 14:23:33 [main] INFO  c.m.d.k.a.clients.KafkaAdminClient - Reading: [twitter-topic] topics(s), attemp: 0
+2023-10-19 14:23:33 [main] INFO  c.m.d.k.a.clients.KafkaAdminClient - Topic with name twitter-topic
+2023-10-19 14:23:33 [main] INFO  c.m.d.k.a.clients.KafkaAdminClient - Topic with name _schemas
+2023-10-19 14:23:33 [main] INFO  c.m.d.k.a.clients.KafkaAdminClient - Topic with name __confluent.support.metrics
+2023-10-19 14:23:33 [main] INFO  c.m.d.t.t.k.s.i.StreamInitializerImpl - Topics with name twitter-topic is ready for operations
+2023-10-19 14:23:33 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-10-19 14:23:33 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text malesuada congue ultricies consectetuer ipsum posuere sit dolor Java amet ipsum ipsum lectus pulvinar dolor sending to kafka topic twitter-topic
+2023-10-19 14:23:33 [pool-1-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 1805663219256070704, "id": 2114982486866604933, "text": "malesuada congue ultricies consectetuer ipsum posuere sit dolor Java amet ipsum ipsum lectus pulvinar dolor", "createdAt": 1697714613000} to topic twitter-topic
+2023-10-19 14:23:33 [pool-1-thread-1] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	batch.size = 1638400
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = producer-1
+	compression.type = snappy
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.LongSerializer
+	linger.ms = 5
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 60000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+
+2023-10-19 14:23:33 [pool-1-thread-1] INFO  i.c.k.s.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	use.latest.version = false
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-19 14:23:33 [pool-1-thread-1] WARN  o.a.k.c.producer.ProducerConfig - The configuration 'internal.auto.downgrade.txn.commit' was supplied but isn't a known config.
+2023-10-19 14:23:33 [pool-1-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2023-10-19 14:23:33 [pool-1-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2023-10-19 14:23:33 [pool-1-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1697714613930
+2023-10-19 14:23:33 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: 4yp5yEKnRueduNpQdy20Lw
+2023-10-19 14:23:34 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1006; Timestamp 1697714613948
+2023-10-19 14:23:35 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text malesuada massa consectetuer pulvinar Lorem dolor Spring libero ipsum magna massa sending to kafka topic twitter-topic
+2023-10-19 14:23:35 [pool-1-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 19569522287766677, "id": 1974738436540505126, "text": "malesuada massa consectetuer pulvinar Lorem dolor Spring libero ipsum magna massa", "createdAt": 1697714615000} to topic twitter-topic
+2023-10-19 14:23:35 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1007; Timestamp 1697714615167
+2023-10-19 14:23:36 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text pulvinar sed Maecenas Lorem Fusce malesuada Maecenas Elasticsearch ultricies sed porttitor porttitor ultricies sending to kafka topic twitter-topic
+2023-10-19 14:23:36 [pool-1-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 4753373255242452995, "id": 2118750421988394081, "text": "pulvinar sed Maecenas Lorem Fusce malesuada Maecenas Elasticsearch ultricies sed porttitor porttitor ultricies", "createdAt": 1697714616000} to topic twitter-topic
+2023-10-19 14:23:36 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1027; Timestamp 1697714616169
+2023-10-19 14:23:36 [SpringContextShutdownHook] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Closing kafka producer
+2023-10-19 14:23:36 [SpringContextShutdownHook] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.

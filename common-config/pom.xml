@@ -8,7 +8,6 @@
     </parent>
 
     <artifactId>common-config</artifactId>
-<!--    <packaging>jar</packaging>-->
 
     <dependencies>
         <dependency>

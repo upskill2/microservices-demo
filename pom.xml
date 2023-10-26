@@ -43,6 +43,7 @@
         <spring-cloud.version>2.2.6.RELEASE</spring-cloud.version>
         <spring-cloud-dependencies.version>Hoxton.SR9</spring-cloud-dependencies.version>
         <spring-cloud-config.version>2.2.6.RELEASE</spring-cloud-config.version>
+        <jasypt-spring.version>3.0.5</jasypt-spring.version>
     </properties>
 
     <repositories>
@@ -54,6 +55,12 @@
 
     <dependencyManagement>
         <dependencies>
+
+            <dependency>
+                <groupId>com.github.ulisesbocchio</groupId>
+                <artifactId>jasypt-spring-boot-starter</artifactId>
+                <version>${jasypt-spring.version}</version>
+            </dependency>
 
             <dependency>
                 <groupId>org.springframework.cloud</groupId>

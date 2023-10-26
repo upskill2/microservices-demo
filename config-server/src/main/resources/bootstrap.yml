@@ -10,10 +10,14 @@ spring:
           default-label: main
           skipSslValidation: true
           username: upskill2
-          password: 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
+          password: ENC(V1xPKSeew7kEvAdZgTzh8hye9v4djmsd4iElkBwb1+QVVjuxxRseZVx5bgFEXJSajWSvxUeY88AviG+QcmFMLCRP4pqtztuTfGAloegkRDc=)
           clone-on-start: true
     fail-fast: true
   security:
     user:
       name: user
-      password: 123
+      password: ENC(JoK2YiDU6ju3SO7QZrwvFDVouxjTBMSkxJkvMpTfWmO0ztZ2m7ncjvSsebFsD9cR)
+
+jasypt:
+  encryptor:
+    password: sectret123

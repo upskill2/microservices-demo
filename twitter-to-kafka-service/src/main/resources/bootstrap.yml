@@ -8,4 +8,8 @@ spring:
       name: twitter-to-kafka-service,config-client
       uri: http://localhost:8888
       username: user
-      password: 123
+      password: ENC(JoK2YiDU6ju3SO7QZrwvFDVouxjTBMSkxJkvMpTfWmO0ztZ2m7ncjvSsebFsD9cR)
+
+jasypt:
+  encryptor:
+    password: sectret123

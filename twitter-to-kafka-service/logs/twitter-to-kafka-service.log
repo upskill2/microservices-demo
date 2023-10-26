@@ -5947,3 +5947,717 @@ Using generated security password: ae0776ca-afb3-4d73-aa70-129e9b9e5a26
 2023-10-26 15:49:43 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text malesuada congue posuere elit Kafka dolor Fusce dolor sending to kafka topic twitter-topic
 2023-10-26 15:49:43 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 6047305490997284328, "id": 5310285859756481187, "text": "malesuada congue posuere elit Kafka dolor Fusce dolor", "createdAt": 1698324583000} to topic twitter-topic
 2023-10-26 15:49:43 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1409; Timestamp 1698324583390
+2023-10-26 15:49:44 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text posuere amet amet consectetuer sit ultricies Java dolor magna ultricies ipsum massa sending to kafka topic twitter-topic
+2023-10-26 15:49:44 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 8663582102699944269, "id": 7907451715829359082, "text": "posuere amet amet consectetuer sit ultricies Java dolor magna ultricies ipsum massa", "createdAt": 1698324584000} to topic twitter-topic
+2023-10-26 15:49:44 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1410; Timestamp 1698324584391
+2023-10-26 15:49:45 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text elit sed elit Fusce malesuada Microservices adipiscing porttitor libero sending to kafka topic twitter-topic
+2023-10-26 15:49:45 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 7529165946130884283, "id": 538065019702372209, "text": "elit sed elit Fusce malesuada Microservices adipiscing porttitor libero", "createdAt": 1698324585000} to topic twitter-topic
+2023-10-26 15:49:45 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1411; Timestamp 1698324585392
+2023-10-26 15:49:46 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text dolor Fusce purus sed Microservices porttitor adipiscing lectus sending to kafka topic twitter-topic
+2023-10-26 15:49:46 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 1761935372619082891, "id": 3048913217399007049, "text": "dolor Fusce purus sed Microservices porttitor adipiscing lectus", "createdAt": 1698324586000} to topic twitter-topic
+2023-10-26 15:49:46 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1421; Timestamp 1698324586394
+2023-10-26 15:49:47 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text massa elit sit ipsum dolor Spring ultricies posuere massa Maecenas sending to kafka topic twitter-topic
+2023-10-26 15:49:47 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 8512528812450508938, "id": 4318834508803772825, "text": "massa elit sit ipsum dolor Spring ultricies posuere massa Maecenas", "createdAt": 1698324587000} to topic twitter-topic
+2023-10-26 15:49:47 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1412; Timestamp 1698324587395
+2023-10-26 15:49:47 [SpringContextShutdownHook] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Closing kafka producer
+2023-10-26 15:49:47 [SpringContextShutdownHook] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2023-10-26 15:49:48 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text libero ipsum consectetuer ipsum pulvinar pulvinar ipsum posuere Elasticsearch Maecenas sed ultricies malesuada elit massa ipsum sending to kafka topic twitter-topic
+2023-10-26 15:49:48 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 1742990928877241895, "id": 7975427388232035498, "text": "libero ipsum consectetuer ipsum pulvinar pulvinar ipsum posuere Elasticsearch Maecenas sed ultricies malesuada elit massa ipsum", "createdAt": 1698324588000} to topic twitter-topic
+2023-10-26 15:49:48 [pool-3-thread-1] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	batch.size = 1638400
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = producer-2
+	compression.type = snappy
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.LongSerializer
+	linger.ms = 5
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 60000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+
+2023-10-26 15:49:48 [pool-3-thread-1] INFO  i.c.k.s.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	use.latest.version = false
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-26 15:49:48 [pool-3-thread-1] WARN  o.a.k.c.producer.ProducerConfig - The configuration 'internal.auto.downgrade.txn.commit' was supplied but isn't a known config.
+2023-10-26 15:49:48 [pool-3-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2023-10-26 15:49:48 [pool-3-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2023-10-26 15:49:48 [pool-3-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1698324588406
+2023-10-26 15:49:48 [kafka-producer-network-thread | producer-2] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-2] Cluster ID: 4yp5yEKnRueduNpQdy20Lw
+2023-10-26 15:49:48 [kafka-producer-network-thread | producer-2] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1413; Timestamp 1698324588446
+2023-10-26 15:49:49 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text Fusce consectetuer dolor sit Spring Maecenas pulvinar sending to kafka topic twitter-topic
+2023-10-26 15:49:49 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 7467563113812196738, "id": 7466644725727169658, "text": "Fusce consectetuer dolor sit Spring Maecenas pulvinar", "createdAt": 1698324589000} to topic twitter-topic
+2023-10-26 15:49:49 [kafka-producer-network-thread | producer-2] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1422; Timestamp 1698324589469
+2023-10-26 15:55:38 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2023-10-26 15:55:38 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+2023-10-26 15:55:38 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource bootstrap [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-10-26 15:55:38 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2023-10-26 15:55:38 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2023-10-26 15:55:38 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2023-10-26 15:55:38 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-10-26 15:55:38 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource applicationConfig: [classpath:/bootstrap.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-10-26 15:55:38 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2023-10-26 15:55:38 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2023-10-26 15:55:38 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2023-10-26 15:55:38 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor - String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+2023-10-26 15:55:38 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.algorithm, using default value: PBEWITHHMACSHA512ANDAES_256
+2023-10-26 15:55:38 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.key-obtention-iterations, using default value: 1000
+2023-10-26 15:55:38 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.pool-size, using default value: 1
+2023-10-26 15:55:38 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.provider-name, using default value: null
+2023-10-26 15:55:38 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.provider-class-name, using default value: null
+2023-10-26 15:55:38 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.salt-generator-classname, using default value: org.jasypt.salt.RandomSaltGenerator
+2023-10-26 15:55:38 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.iv-generator-classname, using default value: org.jasypt.iv.RandomIvGenerator
+2023-10-26 15:55:38 [main] INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.string-output-type, using default value: base64
+2023-10-26 15:55:39 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2023-10-26 15:55:41 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=twitter-to-kafka-service,config-client, profiles=[twitter_to_kafka], label=null, version=ad53a2b3a43bae7b97095ba8d5bc0f8dc13e2bdd, state=null
+2023-10-26 15:55:41 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/upskill2/config-server-repository/config-client-twitter_to_kafka.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/upskill2/config-server-repository/config-client.yml'}]
+2023-10-26 15:55:41 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - The following profiles are active: twitter_to_kafka
+2023-10-26 15:55:42 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=b56b7516-8c54-376d-b185-45549e4b0be2
+2023-10-26 15:55:42 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2023-10-26 15:55:42 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+2023-10-26 15:55:42 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2023-10-26 15:55:42 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2023-10-26 15:55:42 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2023-10-26 15:55:42 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-10-26 15:55:42 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudDefaultProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-10-26 15:55:42 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+2023-10-26 15:55:42 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource bootstrapProperties-configClient [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+2023-10-26 15:55:42 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource bootstrapProperties-https://github.com/upskill2/config-server-repository/config-client-twitter_to_kafka.yml [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+2023-10-26 15:55:42 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource bootstrapProperties-https://github.com/upskill2/config-server-repository/config-client.yml [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+2023-10-26 15:55:42 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$e58a32f2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-10-26 15:55:42 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2023-10-26 15:55:42 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2023-10-26 15:55:42 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2023-10-26 15:55:42 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-10-26 15:55:42 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2023-10-26 15:55:42 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2023-10-26 15:55:42 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1698324942872
+2023-10-26 15:55:43 [main] INFO  o.s.b.a.s.r.ReactiveUserDetailsServiceAutoConfiguration - 
+
+Using generated security password: d833bae2-5e75-4329-acf0-e36fd0f7e70b
+
+2023-10-26 15:55:44 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2023-10-26 15:55:45 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2023-10-26 15:55:46 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2023-10-26 15:55:46 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8080
+2023-10-26 15:55:47 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2023-10-26 15:55:48 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2023-10-26 15:55:48 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 12.335 seconds (JVM running for 12.921)
+2023-10-26 15:55:48 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - EXECUTING : command line runner
+2023-10-26 15:55:48 [main] INFO  c.m.d.k.a.clients.KafkaAdminClient - Creating: [twitter-topic] topics(s), attemp: 0
+2023-10-26 15:55:48 [main] INFO  c.m.d.k.a.clients.KafkaAdminClient - Reading: [twitter-topic] topics(s), attemp: 0
+2023-10-26 15:55:48 [main] INFO  c.m.d.k.a.clients.KafkaAdminClient - Topic with name twitter-topic
+2023-10-26 15:55:48 [main] INFO  c.m.d.k.a.clients.KafkaAdminClient - Topic with name _schemas
+2023-10-26 15:55:48 [main] INFO  c.m.d.k.a.clients.KafkaAdminClient - Topic with name __confluent.support.metrics
+2023-10-26 15:55:48 [main] INFO  c.m.d.t.t.k.s.i.StreamInitializerImpl - Topics with name twitter-topic is ready for operations
+2023-10-26 15:55:48 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-10-26 15:55:48 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text posuere Fusce malesuada amet libero Fusce Spring elit purus purus dolor magna sending to kafka topic twitter-topic
+2023-10-26 15:55:49 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 4453242616249785642, "id": 917032128370146322, "text": "posuere Fusce malesuada amet libero Fusce Spring elit purus purus dolor magna", "createdAt": 1698324948000} to topic twitter-topic
+2023-10-26 15:55:49 [pool-3-thread-1] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	batch.size = 1638400
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = producer-1
+	compression.type = snappy
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.LongSerializer
+	linger.ms = 5
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 60000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+
+2023-10-26 15:55:49 [pool-3-thread-1] INFO  i.c.k.s.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	use.latest.version = false
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-26 15:55:49 [pool-3-thread-1] WARN  o.a.k.c.producer.ProducerConfig - The configuration 'internal.auto.downgrade.txn.commit' was supplied but isn't a known config.
+2023-10-26 15:55:49 [pool-3-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2023-10-26 15:55:49 [pool-3-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2023-10-26 15:55:49 [pool-3-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1698324949137
+2023-10-26 15:55:49 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: 4yp5yEKnRueduNpQdy20Lw
+2023-10-26 15:55:49 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1447; Timestamp 1698324949153
+2023-10-26 15:55:50 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text porttitor amet adipiscing Kafka posuere Maecenas sending to kafka topic twitter-topic
+2023-10-26 15:55:50 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 5229677617654424478, "id": 6514313400095521354, "text": "porttitor amet adipiscing Kafka posuere Maecenas", "createdAt": 1698324950000} to topic twitter-topic
+2023-10-26 15:55:50 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1423; Timestamp 1698324950313
+2023-10-26 15:55:51 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text pulvinar congue magna sed adipiscing posuere amet Microservices porttitor massa Fusce consectetuer pulvinar sending to kafka topic twitter-topic
+2023-10-26 15:55:51 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 2492076483509306703, "id": 6861543790064610854, "text": "pulvinar congue magna sed adipiscing posuere amet Microservices porttitor massa Fusce consectetuer pulvinar", "createdAt": 1698324951000} to topic twitter-topic
+2023-10-26 15:55:51 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1448; Timestamp 1698324951315
+2023-10-26 15:55:52 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text dolor malesuada dolor congue malesuada sed Kafka ultricies purus ultricies malesuada sending to kafka topic twitter-topic
+2023-10-26 15:55:52 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 457625766225055574, "id": 8508932976003252192, "text": "dolor malesuada dolor congue malesuada sed Kafka ultricies purus ultricies malesuada", "createdAt": 1698324952000} to topic twitter-topic
+2023-10-26 15:55:52 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1449; Timestamp 1698324952316
+2023-10-26 15:55:53 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text dolor elit adipiscing magna massa adipiscing porttitor Kafka Maecenas magna posuere pulvinar pulvinar sending to kafka topic twitter-topic
+2023-10-26 15:55:53 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 134537036995899128, "id": 6831599340000525127, "text": "dolor elit adipiscing magna massa adipiscing porttitor Kafka Maecenas magna posuere pulvinar pulvinar", "createdAt": 1698324953000} to topic twitter-topic
+2023-10-26 15:55:53 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1414; Timestamp 1698324953318
+2023-10-26 15:55:54 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text magna ultricies posuere Lorem Elasticsearch lectus posuere sending to kafka topic twitter-topic
+2023-10-26 15:55:54 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 6766351856081140765, "id": 7068179067868559622, "text": "magna ultricies posuere Lorem Elasticsearch lectus posuere", "createdAt": 1698324954000} to topic twitter-topic
+2023-10-26 15:55:54 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1424; Timestamp 1698324954320
+2023-10-26 15:55:55 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text posuere congue malesuada porttitor Elasticsearch posuere consectetuer magna sending to kafka topic twitter-topic
+2023-10-26 15:55:55 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 2800784501510303829, "id": 1467406894169267693, "text": "posuere congue malesuada porttitor Elasticsearch posuere consectetuer magna", "createdAt": 1698324955000} to topic twitter-topic
+2023-10-26 15:55:55 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1425; Timestamp 1698324955323
+2023-10-26 15:55:56 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text porttitor lectus posuere lectus lectus Microservices porttitor Maecenas massa sending to kafka topic twitter-topic
+2023-10-26 15:55:56 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 682772026617776396, "id": 4753972285067849265, "text": "porttitor lectus posuere lectus lectus Microservices porttitor Maecenas massa", "createdAt": 1698324956000} to topic twitter-topic
+2023-10-26 15:55:56 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1426; Timestamp 1698324956324
+2023-10-26 15:55:57 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text malesuada malesuada magna amet Lorem amet Lorem magna Microservices elit consectetuer amet sed amet Maecenas sending to kafka topic twitter-topic
+2023-10-26 15:55:57 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 691866909657674415, "id": 3493701933905615688, "text": "malesuada malesuada magna amet Lorem amet Lorem magna Microservices elit consectetuer amet sed amet Maecenas", "createdAt": 1698324957000} to topic twitter-topic
+2023-10-26 15:55:57 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1427; Timestamp 1698324957328
+2023-10-26 15:55:58 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text posuere elit Lorem dolor malesuada ipsum posuere Elasticsearch ipsum massa dolor amet sed ipsum sending to kafka topic twitter-topic
+2023-10-26 15:55:58 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 4809938680398778143, "id": 6962105458843070764, "text": "posuere elit Lorem dolor malesuada ipsum posuere Elasticsearch ipsum massa dolor amet sed ipsum", "createdAt": 1698324958000} to topic twitter-topic
+2023-10-26 15:55:58 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1428; Timestamp 1698324958329
+2023-10-26 15:55:59 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text sed libero massa malesuada Java Lorem elit dolor sending to kafka topic twitter-topic
+2023-10-26 15:55:59 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 2876563659922079209, "id": 9082372903797064496, "text": "sed libero massa malesuada Java Lorem elit dolor", "createdAt": 1698324959000} to topic twitter-topic
+2023-10-26 15:55:59 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1450; Timestamp 1698324959330
+2023-10-26 15:56:00 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text Maecenas porttitor lectus lectus magna Fusce Kafka purus magna ultricies sit libero sending to kafka topic twitter-topic
+2023-10-26 15:56:00 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 2030859859419818598, "id": 8799234161918486929, "text": "Maecenas porttitor lectus lectus magna Fusce Kafka purus magna ultricies sit libero", "createdAt": 1698324960000} to topic twitter-topic
+2023-10-26 15:56:00 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1415; Timestamp 1698324960332
+2023-10-26 15:56:01 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text Fusce sed magna pulvinar Maecenas Java Fusce sed Lorem malesuada sending to kafka topic twitter-topic
+2023-10-26 15:56:01 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 7759674497385001426, "id": 5614014289531643057, "text": "Fusce sed magna pulvinar Maecenas Java Fusce sed Lorem malesuada", "createdAt": 1698324961000} to topic twitter-topic
+2023-10-26 15:56:01 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1451; Timestamp 1698324961334
+2023-10-26 15:56:02 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text dolor libero Maecenas sed libero consectetuer Elasticsearch adipiscing libero amet pulvinar sending to kafka topic twitter-topic
+2023-10-26 15:56:02 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 7926886658541165745, "id": 5830261890874458320, "text": "dolor libero Maecenas sed libero consectetuer Elasticsearch adipiscing libero amet pulvinar", "createdAt": 1698324962000} to topic twitter-topic
+2023-10-26 15:56:02 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1429; Timestamp 1698324962336
+2023-10-26 15:56:03 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text porttitor congue lectus lectus Java libero congue massa sending to kafka topic twitter-topic
+2023-10-26 15:56:03 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 7572096718069340763, "id": 6953618447433970695, "text": "porttitor congue lectus lectus Java libero congue massa", "createdAt": 1698324963000} to topic twitter-topic
+2023-10-26 15:56:03 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1452; Timestamp 1698324963340
+2023-10-26 15:56:04 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text massa ipsum posuere adipiscing Fusce malesuada ultricies Kafka congue ipsum lectus adipiscing libero ipsum sending to kafka topic twitter-topic
+2023-10-26 15:56:04 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 9164531334499151282, "id": 3638711048722445296, "text": "massa ipsum posuere adipiscing Fusce malesuada ultricies Kafka congue ipsum lectus adipiscing libero ipsum", "createdAt": 1698324964000} to topic twitter-topic
+2023-10-26 15:56:04 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1453; Timestamp 1698324964342
+2023-10-26 15:56:05 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text sit sed purus amet pulvinar lectus adipiscing ipsum Spring porttitor sed consectetuer sit congue malesuada massa sending to kafka topic twitter-topic
+2023-10-26 15:56:05 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 1793923186254874652, "id": 3107854271297961655, "text": "sit sed purus amet pulvinar lectus adipiscing ipsum Spring porttitor sed consectetuer sit congue malesuada massa", "createdAt": 1698324965000} to topic twitter-topic
+2023-10-26 15:56:05 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1454; Timestamp 1698324965346
+2023-10-26 15:56:06 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text massa malesuada ultricies Maecenas Spring elit sit posuere sending to kafka topic twitter-topic
+2023-10-26 15:56:06 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 1872012156655088718, "id": 1832080191902256060, "text": "massa malesuada ultricies Maecenas Spring elit sit posuere", "createdAt": 1698324966000} to topic twitter-topic
+2023-10-26 15:56:06 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1416; Timestamp 1698324966347
+2023-10-26 15:56:07 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text porttitor libero elit ipsum sit elit Fusce magna Kafka ultricies porttitor magna porttitor congue adipiscing congue sending to kafka topic twitter-topic
+2023-10-26 15:56:07 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 4283046627519172098, "id": 2096998291332512292, "text": "porttitor libero elit ipsum sit elit Fusce magna Kafka ultricies porttitor magna porttitor congue adipiscing congue", "createdAt": 1698324967000} to topic twitter-topic
+2023-10-26 15:56:07 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1430; Timestamp 1698324967348
+2023-10-26 15:56:08 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text magna amet dolor lectus sit consectetuer Kafka dolor pulvinar adipiscing Maecenas consectetuer sending to kafka topic twitter-topic
+2023-10-26 15:56:08 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 3543779547001840744, "id": 672945821061894246, "text": "magna amet dolor lectus sit consectetuer Kafka dolor pulvinar adipiscing Maecenas consectetuer", "createdAt": 1698324968000} to topic twitter-topic
+2023-10-26 15:56:08 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1417; Timestamp 1698324968351
+2023-10-26 15:56:09 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text posuere sit adipiscing libero massa posuere Java ipsum Maecenas porttitor magna sending to kafka topic twitter-topic
+2023-10-26 15:56:09 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 7013198692796131681, "id": 8394677005516854528, "text": "posuere sit adipiscing libero massa posuere Java ipsum Maecenas porttitor magna", "createdAt": 1698324969000} to topic twitter-topic
+2023-10-26 15:56:09 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1418; Timestamp 1698324969353
+2023-10-26 15:56:10 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text dolor sit massa purus Fusce sit libero dolor Microservices massa pulvinar malesuada ultricies libero pulvinar Maecenas sending to kafka topic twitter-topic
+2023-10-26 15:56:10 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 8554866867951288999, "id": 8999497727523939875, "text": "dolor sit massa purus Fusce sit libero dolor Microservices massa pulvinar malesuada ultricies libero pulvinar Maecenas", "createdAt": 1698324970000} to topic twitter-topic
+2023-10-26 15:56:10 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1431; Timestamp 1698324970354
+2023-10-26 15:56:11 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text pulvinar adipiscing dolor ipsum adipiscing sed Elasticsearch posuere elit elit amet sending to kafka topic twitter-topic
+2023-10-26 15:56:11 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 7162479757506753428, "id": 461388447438651950, "text": "pulvinar adipiscing dolor ipsum adipiscing sed Elasticsearch posuere elit elit amet", "createdAt": 1698324971000} to topic twitter-topic
+2023-10-26 15:56:11 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1455; Timestamp 1698324971356
+2023-10-26 15:56:12 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text elit pulvinar pulvinar Microservices ipsum consectetuer sending to kafka topic twitter-topic
+2023-10-26 15:56:12 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 5238308088227166925, "id": 7368425807680870152, "text": "elit pulvinar pulvinar Microservices ipsum consectetuer", "createdAt": 1698324972000} to topic twitter-topic
+2023-10-26 15:56:12 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1419; Timestamp 1698324972358
+2023-10-26 15:56:13 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text Maecenas posuere sit massa sit magna Microservices Fusce libero libero elit sending to kafka topic twitter-topic
+2023-10-26 15:56:13 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 884476930159087479, "id": 6355342419286408866, "text": "Maecenas posuere sit massa sit magna Microservices Fusce libero libero elit", "createdAt": 1698324973000} to topic twitter-topic
+2023-10-26 15:56:13 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1420; Timestamp 1698324973360
+2023-10-26 15:56:14 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text sed ultricies ultricies sit consectetuer elit purus Elasticsearch ultricies libero Fusce ultricies porttitor sending to kafka topic twitter-topic
+2023-10-26 15:56:14 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 890066645791230708, "id": 2888402481530921216, "text": "sed ultricies ultricies sit consectetuer elit purus Elasticsearch ultricies libero Fusce ultricies porttitor", "createdAt": 1698324974000} to topic twitter-topic
+2023-10-26 15:56:14 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1456; Timestamp 1698324974361
+2023-10-26 15:56:15 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text adipiscing consectetuer elit adipiscing posuere congue Spring dolor porttitor congue sit lectus sending to kafka topic twitter-topic
+2023-10-26 15:56:15 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 6320338857311830679, "id": 438977403131061315, "text": "adipiscing consectetuer elit adipiscing posuere congue Spring dolor porttitor congue sit lectus", "createdAt": 1698324975000} to topic twitter-topic
+2023-10-26 15:56:15 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1432; Timestamp 1698324975362
+2023-10-26 15:56:16 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text posuere purus congue porttitor posuere Spring consectetuer congue sed sending to kafka topic twitter-topic
+2023-10-26 15:56:16 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 4831216364278121131, "id": 2806085405184555498, "text": "posuere purus congue porttitor posuere Spring consectetuer congue sed", "createdAt": 1698324976000} to topic twitter-topic
+2023-10-26 15:56:16 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1421; Timestamp 1698324976364
+2023-10-26 15:56:17 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text elit amet malesuada sed purus massa Spring ipsum malesuada massa Lorem sit sending to kafka topic twitter-topic
+2023-10-26 15:56:17 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 7910262885534936441, "id": 7021691024895456521, "text": "elit amet malesuada sed purus massa Spring ipsum malesuada massa Lorem sit", "createdAt": 1698324977000} to topic twitter-topic
+2023-10-26 15:56:17 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1422; Timestamp 1698324977365
+2023-10-26 15:56:18 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text Maecenas dolor adipiscing ultricies dolor posuere Elasticsearch adipiscing lectus dolor malesuada sending to kafka topic twitter-topic
+2023-10-26 15:56:18 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 9148745879682560805, "id": 4875370358303787348, "text": "Maecenas dolor adipiscing ultricies dolor posuere Elasticsearch adipiscing lectus dolor malesuada", "createdAt": 1698324978000} to topic twitter-topic
+2023-10-26 15:56:18 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1423; Timestamp 1698324978368
+2023-10-26 15:56:19 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text porttitor Maecenas ipsum Spring dolor malesuada sending to kafka topic twitter-topic
+2023-10-26 15:56:19 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 4419718601030431719, "id": 2323070780272744694, "text": "porttitor Maecenas ipsum Spring dolor malesuada", "createdAt": 1698324979000} to topic twitter-topic
+2023-10-26 15:56:19 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1457; Timestamp 1698324979373
+2023-10-26 15:56:21 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text malesuada consectetuer ipsum adipiscing elit Spring magna porttitor congue sending to kafka topic twitter-topic
+2023-10-26 15:56:21 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 2394568870842924532, "id": 7244166517505271432, "text": "malesuada consectetuer ipsum adipiscing elit Spring magna porttitor congue", "createdAt": 1698324980000} to topic twitter-topic
+2023-10-26 15:56:51 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text pulvinar sit purus Maecenas amet adipiscing ultricies sit Microservices elit elit sed malesuada libero ultricies sending to kafka topic twitter-topic
+2023-10-26 15:56:59 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 159281388546545238, "id": 2526985338310953550, "text": "pulvinar sit purus Maecenas amet adipiscing ultricies sit Microservices elit elit sed malesuada libero ultricies", "createdAt": 1698324992000} to topic twitter-topic
+2023-10-26 15:58:13 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text ipsum consectetuer porttitor lectus posuere consectetuer elit Elasticsearch massa ultricies magna massa amet pulvinar sending to kafka topic twitter-topic
+2023-10-26 15:58:18 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 5272413007651610223, "id": 3972291596317784754, "text": "ipsum consectetuer porttitor lectus posuere consectetuer elit Elasticsearch massa ultricies magna massa amet pulvinar", "createdAt": 1698325046000} to topic twitter-topic
+2023-10-26 15:58:39 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text porttitor dolor lectus dolor dolor consectetuer adipiscing Elasticsearch elit lectus magna elit ipsum ipsum sending to kafka topic twitter-topic
+2023-10-26 15:58:42 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 3723516376725410237, "id": 4872051082787648863, "text": "porttitor dolor lectus dolor dolor consectetuer adipiscing Elasticsearch elit lectus magna elit ipsum ipsum", "createdAt": 1698325111000} to topic twitter-topic
+2023-10-26 15:59:09 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text Lorem sed adipiscing ultricies lectus Lorem Java pulvinar ultricies adipiscing purus amet sending to kafka topic twitter-topic
+2023-10-26 15:59:15 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 543677104433731482, "id": 1628168088037726076, "text": "Lorem sed adipiscing ultricies lectus Lorem Java pulvinar ultricies adipiscing purus amet", "createdAt": 1698325137000} to topic twitter-topic
+2023-10-26 15:59:27 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Unable to send message=[ {"userId": 2394568870842924532, "id": 7244166517505271432, "text": "malesuada consectetuer ipsum adipiscing elit Spring magna porttitor congue", "createdAt": 1698324980000} ] due to : Failed to send; nested exception is org.apache.kafka.common.errors.NetworkException: The server disconnected before a response was received.
+org.springframework.kafka.core.KafkaProducerException: Failed to send; nested exception is org.apache.kafka.common.errors.NetworkException: The server disconnected before a response was received.
+	at org.springframework.kafka.core.KafkaTemplate.lambda$buildCallback$4(KafkaTemplate.java:603)
+	at org.springframework.kafka.core.DefaultKafkaProducerFactory$CloseSafeProducer$1.onCompletion(DefaultKafkaProducerFactory.java:790)
+	at org.apache.kafka.clients.producer.KafkaProducer$InterceptorCallback.onCompletion(KafkaProducer.java:1356)
+	at org.apache.kafka.clients.producer.internals.ProducerBatch.completeFutureAndFireCallbacks(ProducerBatch.java:231)
+	at org.apache.kafka.clients.producer.internals.ProducerBatch.done(ProducerBatch.java:197)
+	at org.apache.kafka.clients.producer.internals.Sender.failBatch(Sender.java:676)
+	at org.apache.kafka.clients.producer.internals.Sender.failBatch(Sender.java:662)
+	at org.apache.kafka.clients.producer.internals.Sender.completeBatch(Sender.java:620)
+	at org.apache.kafka.clients.producer.internals.Sender.handleProduceResponse(Sender.java:539)
+	at org.apache.kafka.clients.producer.internals.Sender.access$100(Sender.java:69)
+	at org.apache.kafka.clients.producer.internals.Sender$1.onComplete(Sender.java:745)
+	at org.apache.kafka.clients.ClientResponse.onComplete(ClientResponse.java:109)
+	at org.apache.kafka.clients.NetworkClient.completeResponses(NetworkClient.java:572)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:564)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:324)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:239)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.kafka.common.errors.NetworkException: The server disconnected before a response was received.
+2023-10-26 15:59:27 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='7244166517505271432' and payload='{"userId": 2394568870842924532, "id": 7244166517505271432, "text": "malesuada consectetuer ipsum adi...' to topic twitter-topic:
+org.apache.kafka.common.errors.NetworkException: The server disconnected before a response was received.
+2023-10-26 15:59:27 [kafka-producer-network-thread | producer-1] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-1] Received invalid metadata error in produce request on partition twitter-topic-2 due to org.apache.kafka.common.errors.NetworkException: The server disconnected before a response was received.. Going to request metadata update now
+2023-10-26 15:59:27 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Unable to send message=[ {"userId": 159281388546545238, "id": 2526985338310953550, "text": "pulvinar sit purus Maecenas amet adipiscing ultricies sit Microservices elit elit sed malesuada libero ultricies", "createdAt": 1698324992000} ] due to : Failed to send; nested exception is org.apache.kafka.common.errors.TimeoutException: Expiring 1 record(s) for twitter-topic-0:122851 ms has passed since batch creation
+org.springframework.kafka.core.KafkaProducerException: Failed to send; nested exception is org.apache.kafka.common.errors.TimeoutException: Expiring 1 record(s) for twitter-topic-0:122851 ms has passed since batch creation
+	at org.springframework.kafka.core.KafkaTemplate.lambda$buildCallback$4(KafkaTemplate.java:603)
+	at org.springframework.kafka.core.DefaultKafkaProducerFactory$CloseSafeProducer$1.onCompletion(DefaultKafkaProducerFactory.java:790)
+	at org.apache.kafka.clients.producer.KafkaProducer$InterceptorCallback.onCompletion(KafkaProducer.java:1356)
+	at org.apache.kafka.clients.producer.internals.ProducerBatch.completeFutureAndFireCallbacks(ProducerBatch.java:231)
+	at org.apache.kafka.clients.producer.internals.ProducerBatch.done(ProducerBatch.java:197)
+	at org.apache.kafka.clients.producer.internals.Sender.failBatch(Sender.java:676)
+	at org.apache.kafka.clients.producer.internals.Sender.sendProducerData(Sender.java:380)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:323)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:239)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Expiring 1 record(s) for twitter-topic-0:122851 ms has passed since batch creation
+2023-10-26 15:59:27 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='2526985338310953550' and payload='{"userId": 159281388546545238, "id": 2526985338310953550, "text": "pulvinar sit purus Maecenas amet ...' to topic twitter-topic:
+org.apache.kafka.common.errors.TimeoutException: Expiring 1 record(s) for twitter-topic-0:122851 ms has passed since batch creation
+2023-10-26 15:59:27 [kafka-producer-network-thread | producer-1] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-1] Received invalid metadata error in produce request on partition twitter-topic-0 due to org.apache.kafka.common.errors.NetworkException: The server disconnected before a response was received.. Going to request metadata update now
+2023-10-26 15:59:27 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1433; Timestamp 1698325100754
+2023-10-26 15:59:27 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text malesuada massa consectetuer Fusce posuere Spring posuere purus purus ipsum sending to kafka topic twitter-topic
+2023-10-26 15:59:27 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 9043037331956611566, "id": 1020141751461500862, "text": "malesuada massa consectetuer Fusce posuere Spring posuere purus purus ipsum", "createdAt": 1698325167000} to topic twitter-topic
+2023-10-26 15:59:28 [kafka-producer-network-thread | producer-1] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-1] Got error produce response with correlation id 45 on topic-partition twitter-topic-1, retrying (4 attempts left). Error: NOT_LEADER_FOR_PARTITION
+2023-10-26 15:59:28 [kafka-producer-network-thread | producer-1] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-1] Received invalid metadata error in produce request on partition twitter-topic-1 due to org.apache.kafka.common.errors.NotLeaderForPartitionException: This server is not the leader for that topic-partition.. Going to request metadata update now
+2023-10-26 15:59:28 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1424; Timestamp 1698325126468
+2023-10-26 15:59:28 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text ipsum malesuada posuere posuere malesuada ipsum Kafka Maecenas ipsum congue ipsum sending to kafka topic twitter-topic
+2023-10-26 15:59:28 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 4216885292459310238, "id": 9008133955609267498, "text": "ipsum malesuada posuere posuere malesuada ipsum Kafka Maecenas ipsum congue ipsum", "createdAt": 1698325168000} to topic twitter-topic
+2023-10-26 15:59:29 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1458; Timestamp 1698325168906
+2023-10-26 15:59:29 [kafka-producer-network-thread | producer-1] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-1] Got error produce response with correlation id 47 on topic-partition twitter-topic-2, retrying (4 attempts left). Error: NOT_LEADER_FOR_PARTITION
+2023-10-26 15:59:29 [kafka-producer-network-thread | producer-1] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-1] Received invalid metadata error in produce request on partition twitter-topic-2 due to org.apache.kafka.common.errors.NotLeaderForPartitionException: This server is not the leader for that topic-partition.. Going to request metadata update now
+2023-10-26 15:59:29 [kafka-producer-network-thread | producer-1] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-1] Got error produce response with correlation id 51 on topic-partition twitter-topic-2, retrying (4 attempts left). Error: NOT_LEADER_FOR_PARTITION
+2023-10-26 15:59:29 [kafka-producer-network-thread | producer-1] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-1] Received invalid metadata error in produce request on partition twitter-topic-2 due to org.apache.kafka.common.errors.NotLeaderForPartitionException: This server is not the leader for that topic-partition.. Going to request metadata update now
+2023-10-26 15:59:29 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1459; Timestamp 1698325167901
+2023-10-26 15:59:29 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1460; Timestamp 1698325158303
+2023-10-26 15:59:29 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text Fusce malesuada sit purus purus Java ipsum sit pulvinar sit sending to kafka topic twitter-topic
+2023-10-26 15:59:29 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 8638417581589617220, "id": 3097460635290533567, "text": "Fusce malesuada sit purus purus Java ipsum sit pulvinar sit", "createdAt": 1698325169000} to topic twitter-topic
+2023-10-26 15:59:29 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1425; Timestamp 1698325169907
+2023-10-26 15:59:30 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text amet pulvinar magna pulvinar consectetuer Elasticsearch malesuada ultricies Lorem sending to kafka topic twitter-topic
+2023-10-26 15:59:30 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 871561079099797531, "id": 3789607510146620496, "text": "amet pulvinar magna pulvinar consectetuer Elasticsearch malesuada ultricies Lorem", "createdAt": 1698325170000} to topic twitter-topic
+2023-10-26 15:59:30 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1426; Timestamp 1698325170909
+2023-10-26 15:59:31 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text lectus purus sed Kafka consectetuer dolor sending to kafka topic twitter-topic
+2023-10-26 15:59:31 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 5815257263398673175, "id": 5262562096945631103, "text": "lectus purus sed Kafka consectetuer dolor", "createdAt": 1698325171000} to topic twitter-topic
+2023-10-26 15:59:31 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1461; Timestamp 1698325171910
+2023-10-26 15:59:32 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text posuere porttitor posuere adipiscing ipsum massa amet Elasticsearch pulvinar posuere adipiscing consectetuer lectus sending to kafka topic twitter-topic
+2023-10-26 15:59:32 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 3021567582678757624, "id": 8577733752275934016, "text": "posuere porttitor posuere adipiscing ipsum massa amet Elasticsearch pulvinar posuere adipiscing consectetuer lectus", "createdAt": 1698325172000} to topic twitter-topic
+2023-10-26 15:59:32 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1435; Timestamp 1698325172985
+2023-10-26 15:59:33 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text amet malesuada elit ultricies sit elit Java pulvinar congue elit ultricies adipiscing sending to kafka topic twitter-topic
+2023-10-26 15:59:33 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 2542257214997838316, "id": 195475805290808942, "text": "amet malesuada elit ultricies sit elit Java pulvinar congue elit ultricies adipiscing", "createdAt": 1698325173000} to topic twitter-topic
+2023-10-26 15:59:34 [kafka-producer-network-thread | producer-1] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-1] Got error produce response with correlation id 63 on topic-partition twitter-topic-1, retrying (4 attempts left). Error: NOT_LEADER_FOR_PARTITION
+2023-10-26 15:59:34 [kafka-producer-network-thread | producer-1] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-1] Received invalid metadata error in produce request on partition twitter-topic-1 due to org.apache.kafka.common.errors.NotLeaderForPartitionException: This server is not the leader for that topic-partition.. Going to request metadata update now
+2023-10-26 15:59:34 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1427; Timestamp 1698325173986
+2023-10-26 15:59:34 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text lectus Fusce sed purus Java ultricies lectus sending to kafka topic twitter-topic
+2023-10-26 15:59:34 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 6449199424450274321, "id": 8249553251854956898, "text": "lectus Fusce sed purus Java ultricies lectus", "createdAt": 1698325174000} to topic twitter-topic
+2023-10-26 15:59:34 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1428; Timestamp 1698325174988
+2023-10-26 15:59:35 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text Lorem porttitor lectus Maecenas Elasticsearch posuere magna sending to kafka topic twitter-topic
+2023-10-26 15:59:35 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 8221674052759242551, "id": 5969259917923425634, "text": "Lorem porttitor lectus Maecenas Elasticsearch posuere magna", "createdAt": 1698325175000} to topic twitter-topic
+2023-10-26 15:59:36 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1462; Timestamp 1698325175990
+2023-10-26 15:59:36 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text magna ultricies elit ipsum magna pulvinar posuere Kafka posuere adipiscing Lorem sit magna sending to kafka topic twitter-topic
+2023-10-26 15:59:36 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 6680493952209561080, "id": 4844667138439870227, "text": "magna ultricies elit ipsum magna pulvinar posuere Kafka posuere adipiscing Lorem sit magna", "createdAt": 1698325176000} to topic twitter-topic
+2023-10-26 15:59:37 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1436; Timestamp 1698325176991
+2023-10-26 15:59:37 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text purus ultricies Lorem dolor lectus Elasticsearch consectetuer massa posuere malesuada sending to kafka topic twitter-topic
+2023-10-26 15:59:37 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 242112995963170473, "id": 3105184138544445630, "text": "purus ultricies Lorem dolor lectus Elasticsearch consectetuer massa posuere malesuada", "createdAt": 1698325177000} to topic twitter-topic
+2023-10-26 15:59:38 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1437; Timestamp 1698325177993
+2023-10-26 15:59:38 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text ultricies dolor Maecenas Lorem ipsum Java dolor congue amet pulvinar sending to kafka topic twitter-topic
+2023-10-26 15:59:38 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 6939398139377454659, "id": 756338154129328406, "text": "ultricies dolor Maecenas Lorem ipsum Java dolor congue amet pulvinar", "createdAt": 1698325178000} to topic twitter-topic
+2023-10-26 15:59:39 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1429; Timestamp 1698325178994
+2023-10-26 15:59:39 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text congue dolor ultricies Fusce magna Spring adipiscing sit massa magna sending to kafka topic twitter-topic
+2023-10-26 15:59:39 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 3109414734808071611, "id": 7188257672836467466, "text": "congue dolor ultricies Fusce magna Spring adipiscing sit massa magna", "createdAt": 1698325179000} to topic twitter-topic
+2023-10-26 15:59:40 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1463; Timestamp 1698325179996
+2023-10-26 15:59:40 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text consectetuer ipsum adipiscing Maecenas purus Java Fusce magna lectus ultricies sending to kafka topic twitter-topic
+2023-10-26 15:59:40 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 3802112463020676489, "id": 1860683539526051475, "text": "consectetuer ipsum adipiscing Maecenas purus Java Fusce magna lectus ultricies", "createdAt": 1698325180000} to topic twitter-topic
+2023-10-26 15:59:41 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1430; Timestamp 1698325180997
+2023-10-26 15:59:41 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text amet elit dolor lectus amet sit Java dolor massa ultricies magna ipsum sending to kafka topic twitter-topic
+2023-10-26 15:59:41 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 2144032061040856123, "id": 7970637245003274420, "text": "amet elit dolor lectus amet sit Java dolor massa ultricies magna ipsum", "createdAt": 1698325181000} to topic twitter-topic
+2023-10-26 15:59:42 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1431; Timestamp 1698325182000
+2023-10-26 15:59:43 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text dolor dolor lectus amet Elasticsearch amet lectus sending to kafka topic twitter-topic
+2023-10-26 15:59:43 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 2954220888672711980, "id": 5128270544875979444, "text": "dolor dolor lectus amet Elasticsearch amet lectus", "createdAt": 1698325183000} to topic twitter-topic
+2023-10-26 15:59:43 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1464; Timestamp 1698325183027
+2023-10-26 15:59:44 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text adipiscing libero malesuada lectus Microservices pulvinar elit libero sending to kafka topic twitter-topic
+2023-10-26 15:59:44 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 1162804739556979500, "id": 2302993965664043032, "text": "adipiscing libero malesuada lectus Microservices pulvinar elit libero", "createdAt": 1698325184000} to topic twitter-topic
+2023-10-26 15:59:44 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1465; Timestamp 1698325184028
+2023-10-26 15:59:45 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text Fusce lectus sit congue Spring malesuada lectus sending to kafka topic twitter-topic
+2023-10-26 15:59:45 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 8404974018666769632, "id": 6572677628318609983, "text": "Fusce lectus sit congue Spring malesuada lectus", "createdAt": 1698325185000} to topic twitter-topic
+2023-10-26 15:59:45 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1432; Timestamp 1698325185030
+2023-10-26 15:59:46 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text ultricies congue elit Lorem sed sit Spring porttitor massa malesuada Fusce ultricies sending to kafka topic twitter-topic
+2023-10-26 15:59:46 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 3410363404196170426, "id": 6040926089007758522, "text": "ultricies congue elit Lorem sed sit Spring porttitor massa malesuada Fusce ultricies", "createdAt": 1698325186000} to topic twitter-topic
+2023-10-26 15:59:46 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1466; Timestamp 1698325186032
+2023-10-26 15:59:47 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text malesuada elit amet sed ultricies Fusce Spring Fusce Maecenas ultricies magna sending to kafka topic twitter-topic
+2023-10-26 15:59:47 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 8840660322799720079, "id": 2762631884652692961, "text": "malesuada elit amet sed ultricies Fusce Spring Fusce Maecenas ultricies magna", "createdAt": 1698325187000} to topic twitter-topic
+2023-10-26 15:59:47 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1438; Timestamp 1698325187037
+2023-10-26 15:59:48 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text dolor sit malesuada amet massa magna posuere Elasticsearch adipiscing purus consectetuer Fusce porttitor ultricies sending to kafka topic twitter-topic
+2023-10-26 15:59:48 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 4115072934998743848, "id": 2086405570893276032, "text": "dolor sit malesuada amet massa magna posuere Elasticsearch adipiscing purus consectetuer Fusce porttitor ultricies", "createdAt": 1698325188000} to topic twitter-topic
+2023-10-26 15:59:48 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1433; Timestamp 1698325188041
+2023-10-26 15:59:49 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text pulvinar malesuada purus Kafka consectetuer Fusce sending to kafka topic twitter-topic
+2023-10-26 15:59:49 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 8897970919639194034, "id": 8596583453983205189, "text": "pulvinar malesuada purus Kafka consectetuer Fusce", "createdAt": 1698325189000} to topic twitter-topic
+2023-10-26 15:59:49 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1467; Timestamp 1698325189043
+2023-10-26 15:59:50 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text dolor porttitor malesuada amet pulvinar lectus Spring elit Maecenas magna consectetuer sending to kafka topic twitter-topic
+2023-10-26 15:59:50 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 7781441161769434610, "id": 8163387950960626149, "text": "dolor porttitor malesuada amet pulvinar lectus Spring elit Maecenas magna consectetuer", "createdAt": 1698325190000} to topic twitter-topic
+2023-10-26 15:59:50 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1439; Timestamp 1698325190044
+2023-10-26 15:59:51 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text sit malesuada Maecenas malesuada lectus congue dolor Spring sed libero posuere sed lectus sending to kafka topic twitter-topic
+2023-10-26 15:59:51 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 749844613221420720, "id": 3454756381230167514, "text": "sit malesuada Maecenas malesuada lectus congue dolor Spring sed libero posuere sed lectus", "createdAt": 1698325191000} to topic twitter-topic
+2023-10-26 15:59:51 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1434; Timestamp 1698325191046
+2023-10-26 15:59:52 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text libero pulvinar elit consectetuer Spring malesuada magna magna sending to kafka topic twitter-topic
+2023-10-26 15:59:52 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 6409989502192462681, "id": 4921951203845180320, "text": "libero pulvinar elit consectetuer Spring malesuada magna magna", "createdAt": 1698325192000} to topic twitter-topic
+2023-10-26 15:59:52 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1435; Timestamp 1698325192047
+2023-10-26 15:59:53 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text elit malesuada lectus sit Microservices dolor sed sending to kafka topic twitter-topic
+2023-10-26 15:59:53 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 1230522103477270209, "id": 8097241435012440949, "text": "elit malesuada lectus sit Microservices dolor sed", "createdAt": 1698325193000} to topic twitter-topic
+2023-10-26 15:59:53 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1440; Timestamp 1698325193049
+2023-10-26 15:59:54 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text dolor magna malesuada congue massa adipiscing elit Microservices purus sed Fusce elit lectus sending to kafka topic twitter-topic
+2023-10-26 15:59:54 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 2520949249640428396, "id": 6909708574864421202, "text": "dolor magna malesuada congue massa adipiscing elit Microservices purus sed Fusce elit lectus", "createdAt": 1698325194000} to topic twitter-topic
+2023-10-26 15:59:54 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1441; Timestamp 1698325194050
+2023-10-26 15:59:55 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text magna posuere Fusce Maecenas massa malesuada Microservices dolor Lorem ultricies adipiscing lectus sending to kafka topic twitter-topic
+2023-10-26 15:59:55 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 1190955846758171646, "id": 31394438216679456, "text": "magna posuere Fusce Maecenas massa malesuada Microservices dolor Lorem ultricies adipiscing lectus", "createdAt": 1698325195000} to topic twitter-topic
+2023-10-26 15:59:55 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1436; Timestamp 1698325195052
+2023-10-26 15:59:56 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text Lorem pulvinar Maecenas elit pulvinar magna Microservices Fusce amet lectus Lorem ipsum sending to kafka topic twitter-topic
+2023-10-26 15:59:56 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 1688079530186506449, "id": 5808413271816829825, "text": "Lorem pulvinar Maecenas elit pulvinar magna Microservices Fusce amet lectus Lorem ipsum", "createdAt": 1698325196000} to topic twitter-topic
+2023-10-26 15:59:56 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1468; Timestamp 1698325196055
+2023-10-26 15:59:57 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text magna adipiscing dolor libero Kafka sed dolor Maecenas sending to kafka topic twitter-topic
+2023-10-26 15:59:57 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 5099807563384132568, "id": 8978292673280485116, "text": "magna adipiscing dolor libero Kafka sed dolor Maecenas", "createdAt": 1698325197000} to topic twitter-topic
+2023-10-26 15:59:57 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1442; Timestamp 1698325197057
+2023-10-26 15:59:58 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text massa elit libero consectetuer Microservices porttitor ipsum sending to kafka topic twitter-topic
+2023-10-26 15:59:58 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 5657820776359391638, "id": 8080898006912798297, "text": "massa elit libero consectetuer Microservices porttitor ipsum", "createdAt": 1698325198000} to topic twitter-topic
+2023-10-26 15:59:58 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1443; Timestamp 1698325198059
+2023-10-26 15:59:59 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text consectetuer libero amet magna Elasticsearch amet porttitor sending to kafka topic twitter-topic
+2023-10-26 15:59:59 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 9089804349254266264, "id": 6478371521873405466, "text": "consectetuer libero amet magna Elasticsearch amet porttitor", "createdAt": 1698325199000} to topic twitter-topic
+2023-10-26 15:59:59 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1437; Timestamp 1698325199060
+2023-10-26 16:00:00 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text dolor ipsum massa libero magna Elasticsearch purus ipsum libero magna sending to kafka topic twitter-topic
+2023-10-26 16:00:00 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 5527238807118638559, "id": 6818155744971949285, "text": "dolor ipsum massa libero magna Elasticsearch purus ipsum libero magna", "createdAt": 1698325200000} to topic twitter-topic
+2023-10-26 16:00:00 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1444; Timestamp 1698325200061
+2023-10-26 16:00:01 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text ultricies massa malesuada massa consectetuer elit congue Fusce Elasticsearch elit Fusce pulvinar ipsum sed pulvinar sending to kafka topic twitter-topic
+2023-10-26 16:00:01 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 9147217739260113278, "id": 3953739769097738202, "text": "ultricies massa malesuada massa consectetuer elit congue Fusce Elasticsearch elit Fusce pulvinar ipsum sed pulvinar", "createdAt": 1698325201000} to topic twitter-topic
+2023-10-26 16:00:01 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1469; Timestamp 1698325201062
+2023-10-26 16:00:02 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text adipiscing congue lectus pulvinar Java posuere ultricies sending to kafka topic twitter-topic
+2023-10-26 16:00:02 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 5636557618205208584, "id": 4433406054274835793, "text": "adipiscing congue lectus pulvinar Java posuere ultricies", "createdAt": 1698325202000} to topic twitter-topic
+2023-10-26 16:00:02 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1470; Timestamp 1698325202063
+2023-10-26 16:00:03 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text sed magna pulvinar sit massa ultricies amet lectus Elasticsearch ipsum congue congue porttitor congue sit pulvinar sending to kafka topic twitter-topic
+2023-10-26 16:00:03 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 5310472301644693523, "id": 7626004339913250354, "text": "sed magna pulvinar sit massa ultricies amet lectus Elasticsearch ipsum congue congue porttitor congue sit pulvinar", "createdAt": 1698325203000} to topic twitter-topic
+2023-10-26 16:00:03 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1471; Timestamp 1698325203065
+2023-10-26 16:00:04 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text elit Lorem massa adipiscing elit Spring massa adipiscing congue sending to kafka topic twitter-topic
+2023-10-26 16:00:04 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 1530057802638126486, "id": 2619987697310697330, "text": "elit Lorem massa adipiscing elit Spring massa adipiscing congue", "createdAt": 1698325204000} to topic twitter-topic
+2023-10-26 16:00:04 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1472; Timestamp 1698325204066
+2023-10-26 16:00:05 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text porttitor sit malesuada posuere Fusce Kafka amet amet amet sed sending to kafka topic twitter-topic
+2023-10-26 16:00:05 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 5948358774270763565, "id": 7191449457754581641, "text": "porttitor sit malesuada posuere Fusce Kafka amet amet amet sed", "createdAt": 1698325205000} to topic twitter-topic
+2023-10-26 16:00:05 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1445; Timestamp 1698325205067
+2023-10-26 16:00:06 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text libero ipsum posuere adipiscing pulvinar lectus Spring porttitor porttitor lectus Fusce sending to kafka topic twitter-topic
+2023-10-26 16:00:06 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 1670973888258763448, "id": 8986058856931786113, "text": "libero ipsum posuere adipiscing pulvinar lectus Spring porttitor porttitor lectus Fusce", "createdAt": 1698325206000} to topic twitter-topic
+2023-10-26 16:00:06 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1473; Timestamp 1698325206068
+2023-10-26 16:00:07 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text consectetuer elit Maecenas malesuada Kafka ipsum elit sending to kafka topic twitter-topic
+2023-10-26 16:00:07 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 3542159199726395447, "id": 5588411373526733213, "text": "consectetuer elit Maecenas malesuada Kafka ipsum elit", "createdAt": 1698325207000} to topic twitter-topic
+2023-10-26 16:00:07 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1474; Timestamp 1698325207070
+2023-10-26 16:00:08 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text posuere ultricies porttitor congue malesuada pulvinar massa Kafka congue ultricies lectus massa pulvinar sending to kafka topic twitter-topic
+2023-10-26 16:00:08 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 392616184095307507, "id": 2320330341412724759, "text": "posuere ultricies porttitor congue malesuada pulvinar massa Kafka congue ultricies lectus massa pulvinar", "createdAt": 1698325208000} to topic twitter-topic
+2023-10-26 16:00:08 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1475; Timestamp 1698325208071
+2023-10-26 16:00:09 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text Lorem pulvinar elit sit congue Microservices amet libero elit magna sending to kafka topic twitter-topic
+2023-10-26 16:00:09 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 3577639488547490867, "id": 2584052126193588087, "text": "Lorem pulvinar elit sit congue Microservices amet libero elit magna", "createdAt": 1698325209000} to topic twitter-topic
+2023-10-26 16:00:09 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1446; Timestamp 1698325209072
+2023-10-26 16:00:10 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text posuere massa ultricies Kafka lectus libero sending to kafka topic twitter-topic
+2023-10-26 16:00:10 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 1278024718298819318, "id": 9135512371376181878, "text": "posuere massa ultricies Kafka lectus libero", "createdAt": 1698325210000} to topic twitter-topic
+2023-10-26 16:00:10 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1438; Timestamp 1698325210076
+2023-10-26 16:00:11 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text pulvinar purus elit elit amet Lorem Spring malesuada Fusce ipsum Lorem sending to kafka topic twitter-topic
+2023-10-26 16:00:11 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 964387216809306622, "id": 1072086084824872787, "text": "pulvinar purus elit elit amet Lorem Spring malesuada Fusce ipsum Lorem", "createdAt": 1698325211000} to topic twitter-topic
+2023-10-26 16:00:11 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1439; Timestamp 1698325211078
+2023-10-26 16:00:12 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text sed congue massa sed purus Kafka Fusce Lorem malesuada sending to kafka topic twitter-topic
+2023-10-26 16:00:12 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 2522272092862929018, "id": 3295899957571906151, "text": "sed congue massa sed purus Kafka Fusce Lorem malesuada", "createdAt": 1698325212000} to topic twitter-topic
+2023-10-26 16:00:12 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1440; Timestamp 1698325212079
+2023-10-26 16:00:13 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text purus libero ipsum sit sed Microservices dolor elit posuere sending to kafka topic twitter-topic
+2023-10-26 16:00:13 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 9132339920987593377, "id": 4731180081318935675, "text": "purus libero ipsum sit sed Microservices dolor elit posuere", "createdAt": 1698325213000} to topic twitter-topic
+2023-10-26 16:00:13 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1447; Timestamp 1698325213080
+2023-10-26 16:00:14 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text consectetuer purus purus adipiscing magna magna Microservices Lorem massa amet congue consectetuer sending to kafka topic twitter-topic
+2023-10-26 16:00:14 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 8144336087622449069, "id": 4621417777929867286, "text": "consectetuer purus purus adipiscing magna magna Microservices Lorem massa amet congue consectetuer", "createdAt": 1698325214000} to topic twitter-topic
+2023-10-26 16:00:14 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1441; Timestamp 1698325214082
+2023-10-26 16:00:15 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text amet ipsum ultricies sit Fusce Fusce Java magna ultricies massa libero sending to kafka topic twitter-topic
+2023-10-26 16:00:15 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 7403680819209990260, "id": 3562985944854286971, "text": "amet ipsum ultricies sit Fusce Fusce Java magna ultricies massa libero", "createdAt": 1698325215000} to topic twitter-topic
+2023-10-26 16:00:15 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1442; Timestamp 1698325215088
+2023-10-26 16:00:16 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text posuere magna Fusce magna Lorem sed adipiscing Kafka sed magna purus sed magna sending to kafka topic twitter-topic
+2023-10-26 16:00:16 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 5602971430681170786, "id": 3589820549014725270, "text": "posuere magna Fusce magna Lorem sed adipiscing Kafka sed magna purus sed magna", "createdAt": 1698325216000} to topic twitter-topic
+2023-10-26 16:00:16 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1443; Timestamp 1698325216089
+2023-10-26 16:00:17 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text congue posuere Fusce libero Kafka pulvinar sed ipsum sending to kafka topic twitter-topic
+2023-10-26 16:00:17 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 3580294859447519261, "id": 7867889717294888687, "text": "congue posuere Fusce libero Kafka pulvinar sed ipsum", "createdAt": 1698325217000} to topic twitter-topic
+2023-10-26 16:00:17 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1476; Timestamp 1698325217090
+2023-10-26 16:00:18 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text pulvinar sed sed Java sit congue sending to kafka topic twitter-topic
+2023-10-26 16:00:18 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 7136945631768346356, "id": 4824067933310286986, "text": "pulvinar sed sed Java sit congue", "createdAt": 1698325218000} to topic twitter-topic
+2023-10-26 16:00:18 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1477; Timestamp 1698325218092
+2023-10-26 16:00:19 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text amet elit massa malesuada purus Kafka consectetuer congue pulvinar sed sending to kafka topic twitter-topic
+2023-10-26 16:00:19 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 361923084045068927, "id": 8708509064562333792, "text": "amet elit massa malesuada purus Kafka consectetuer congue pulvinar sed", "createdAt": 1698325219000} to topic twitter-topic
+2023-10-26 16:00:19 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1444; Timestamp 1698325219093
+2023-10-26 16:00:20 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text congue consectetuer elit posuere pulvinar porttitor Lorem Kafka ipsum sit Maecenas Lorem elit Lorem sending to kafka topic twitter-topic
+2023-10-26 16:00:20 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 3587950071344631330, "id": 4795736161216356732, "text": "congue consectetuer elit posuere pulvinar porttitor Lorem Kafka ipsum sit Maecenas Lorem elit Lorem", "createdAt": 1698325220000} to topic twitter-topic
+2023-10-26 16:00:20 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1448; Timestamp 1698325220094
+2023-10-26 16:00:21 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text purus sed libero Microservices sit amet sending to kafka topic twitter-topic
+2023-10-26 16:00:21 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 647787925614653884, "id": 7624721000628893281, "text": "purus sed libero Microservices sit amet", "createdAt": 1698325221000} to topic twitter-topic
+2023-10-26 16:00:21 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1449; Timestamp 1698325221095
+2023-10-26 16:00:22 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text purus congue massa lectus ultricies Microservices porttitor dolor Lorem sending to kafka topic twitter-topic
+2023-10-26 16:00:22 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 6410825227361935257, "id": 2416771598135719528, "text": "purus congue massa lectus ultricies Microservices porttitor dolor Lorem", "createdAt": 1698325222000} to topic twitter-topic
+2023-10-26 16:00:22 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1478; Timestamp 1698325222097
+2023-10-26 16:00:23 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text dolor Fusce pulvinar purus Microservices elit Lorem sending to kafka topic twitter-topic
+2023-10-26 16:00:23 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 5906930337092156027, "id": 5519086107205616832, "text": "dolor Fusce pulvinar purus Microservices elit Lorem", "createdAt": 1698325223000} to topic twitter-topic
+2023-10-26 16:00:23 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1445; Timestamp 1698325223099
+2023-10-26 16:00:24 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text ipsum posuere magna amet Fusce Lorem libero Spring magna amet magna sed lectus congue sending to kafka topic twitter-topic
+2023-10-26 16:00:24 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 3435542638324686476, "id": 4797241910724953988, "text": "ipsum posuere magna amet Fusce Lorem libero Spring magna amet magna sed lectus congue", "createdAt": 1698325224000} to topic twitter-topic
+2023-10-26 16:00:24 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1446; Timestamp 1698325224100
+2023-10-26 16:00:25 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text adipiscing porttitor malesuada malesuada Fusce libero Spring porttitor Maecenas congue ultricies sending to kafka topic twitter-topic
+2023-10-26 16:00:25 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 4221235350438285635, "id": 2802726994862101436, "text": "adipiscing porttitor malesuada malesuada Fusce libero Spring porttitor Maecenas congue ultricies", "createdAt": 1698325225000} to topic twitter-topic
+2023-10-26 16:00:25 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1479; Timestamp 1698325225102
+2023-10-26 16:00:26 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text ipsum Maecenas adipiscing libero Microservices elit congue massa sending to kafka topic twitter-topic
+2023-10-26 16:00:26 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 2144772892077389528, "id": 6681937603158382936, "text": "ipsum Maecenas adipiscing libero Microservices elit congue massa", "createdAt": 1698325226000} to topic twitter-topic
+2023-10-26 16:00:26 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1447; Timestamp 1698325226103
+2023-10-26 16:00:27 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text pulvinar purus porttitor Maecenas Lorem ipsum Microservices sit amet massa Maecenas ultricies sending to kafka topic twitter-topic
+2023-10-26 16:00:27 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 4055804928015982345, "id": 867532394271659863, "text": "pulvinar purus porttitor Maecenas Lorem ipsum Microservices sit amet massa Maecenas ultricies", "createdAt": 1698325227000} to topic twitter-topic
+2023-10-26 16:00:27 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1480; Timestamp 1698325227105
+2023-10-26 16:00:28 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text Maecenas elit dolor ultricies pulvinar congue Microservices dolor Lorem sit lectus porttitor sending to kafka topic twitter-topic
+2023-10-26 16:00:28 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 4162573361295058064, "id": 569059739831273022, "text": "Maecenas elit dolor ultricies pulvinar congue Microservices dolor Lorem sit lectus porttitor", "createdAt": 1698325228000} to topic twitter-topic
+2023-10-26 16:00:28 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1481; Timestamp 1698325228106
+2023-10-26 16:00:29 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text ultricies adipiscing adipiscing lectus purus Kafka malesuada malesuada sit magna sending to kafka topic twitter-topic
+2023-10-26 16:00:29 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 435211778152882954, "id": 4039868093919492150, "text": "ultricies adipiscing adipiscing lectus purus Kafka malesuada malesuada sit magna", "createdAt": 1698325229000} to topic twitter-topic
+2023-10-26 16:00:29 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1450; Timestamp 1698325229107
+2023-10-26 16:00:30 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text massa ultricies Maecenas elit Java massa amet pulvinar sending to kafka topic twitter-topic
+2023-10-26 16:00:30 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 1838957709372999772, "id": 8111310347753776963, "text": "massa ultricies Maecenas elit Java massa amet pulvinar", "createdAt": 1698325230000} to topic twitter-topic
+2023-10-26 16:00:30 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1451; Timestamp 1698325230109
+2023-10-26 16:00:31 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text congue libero Fusce lectus ultricies lectus dolor lectus Spring sit dolor elit ultricies pulvinar dolor sending to kafka topic twitter-topic
+2023-10-26 16:00:31 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 2338846640942807271, "id": 7112238324423268363, "text": "congue libero Fusce lectus ultricies lectus dolor lectus Spring sit dolor elit ultricies pulvinar dolor", "createdAt": 1698325231000} to topic twitter-topic
+2023-10-26 16:00:31 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1452; Timestamp 1698325231110
+2023-10-26 16:00:32 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text libero purus congue purus Maecenas posuere massa Maecenas Java pulvinar sit pulvinar ultricies consectetuer elit malesuada sending to kafka topic twitter-topic
+2023-10-26 16:00:32 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 2919816225984830161, "id": 6527772327005421272, "text": "libero purus congue purus Maecenas posuere massa Maecenas Java pulvinar sit pulvinar ultricies consectetuer elit malesuada", "createdAt": 1698325232000} to topic twitter-topic
+2023-10-26 16:00:32 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1448; Timestamp 1698325232121
+2023-10-26 16:00:33 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text porttitor sed amet sed Kafka amet Lorem sending to kafka topic twitter-topic
+2023-10-26 16:00:33 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 8324487009601046990, "id": 8912592888795439520, "text": "porttitor sed amet sed Kafka amet Lorem", "createdAt": 1698325233000} to topic twitter-topic
+2023-10-26 16:00:33 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1453; Timestamp 1698325233123
+2023-10-26 16:00:34 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text dolor congue magna Java ipsum massa sending to kafka topic twitter-topic
+2023-10-26 16:00:34 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 8360655123337053356, "id": 6360864807763765571, "text": "dolor congue magna Java ipsum massa", "createdAt": 1698325234000} to topic twitter-topic
+2023-10-26 16:00:34 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1454; Timestamp 1698325234136
+2023-10-26 16:00:35 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text purus Maecenas sit dolor pulvinar massa pulvinar massa Microservices magna dolor consectetuer Lorem adipiscing malesuada sending to kafka topic twitter-topic
+2023-10-26 16:00:35 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 7126952795711261279, "id": 127265264501817421, "text": "purus Maecenas sit dolor pulvinar massa pulvinar massa Microservices magna dolor consectetuer Lorem adipiscing malesuada", "createdAt": 1698325235000} to topic twitter-topic
+2023-10-26 16:00:35 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1455; Timestamp 1698325235138
+2023-10-26 16:00:36 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text Maecenas porttitor congue adipiscing magna Microservices malesuada purus amet sending to kafka topic twitter-topic
+2023-10-26 16:00:36 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 283171355889205942, "id": 5135686393896480962, "text": "Maecenas porttitor congue adipiscing magna Microservices malesuada purus amet", "createdAt": 1698325236000} to topic twitter-topic
+2023-10-26 16:00:36 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1456; Timestamp 1698325236139
+2023-10-26 16:00:37 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text porttitor lectus sit Fusce massa Elasticsearch malesuada Fusce pulvinar sed sending to kafka topic twitter-topic
+2023-10-26 16:00:37 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 7584470924820368792, "id": 8560583183054575101, "text": "porttitor lectus sit Fusce massa Elasticsearch malesuada Fusce pulvinar sed", "createdAt": 1698325237000} to topic twitter-topic
+2023-10-26 16:00:37 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1449; Timestamp 1698325237150
+2023-10-26 16:00:38 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text consectetuer malesuada posuere Spring sed massa sending to kafka topic twitter-topic
+2023-10-26 16:00:38 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 4888843120587664921, "id": 3201123299521660, "text": "consectetuer malesuada posuere Spring sed massa", "createdAt": 1698325238000} to topic twitter-topic
+2023-10-26 16:00:38 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1457; Timestamp 1698325238151
+2023-10-26 16:00:39 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text amet sit porttitor pulvinar lectus Java Lorem porttitor purus sending to kafka topic twitter-topic
+2023-10-26 16:00:39 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 2448304209707865222, "id": 3687982242417689241, "text": "amet sit porttitor pulvinar lectus Java Lorem porttitor purus", "createdAt": 1698325239000} to topic twitter-topic
+2023-10-26 16:00:39 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1482; Timestamp 1698325239152
+2023-10-26 16:00:40 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text lectus elit elit Maecenas pulvinar Maecenas dolor Java elit magna pulvinar consectetuer dolor ipsum sending to kafka topic twitter-topic
+2023-10-26 16:00:40 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 4330296332472004108, "id": 4384415694939056021, "text": "lectus elit elit Maecenas pulvinar Maecenas dolor Java elit magna pulvinar consectetuer dolor ipsum", "createdAt": 1698325240000} to topic twitter-topic
+2023-10-26 16:00:40 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1458; Timestamp 1698325240154
+2023-10-26 16:00:41 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text congue sit ipsum malesuada sit lectus malesuada Lorem Java sed libero ipsum pulvinar ipsum ultricies sending to kafka topic twitter-topic
+2023-10-26 16:00:41 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 726176094094878751, "id": 398893622538604968, "text": "congue sit ipsum malesuada sit lectus malesuada Lorem Java sed libero ipsum pulvinar ipsum ultricies", "createdAt": 1698325241000} to topic twitter-topic
+2023-10-26 16:00:41 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1483; Timestamp 1698325241155
+2023-10-26 16:00:42 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text Lorem consectetuer dolor Java purus sed sending to kafka topic twitter-topic
+2023-10-26 16:00:42 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 5881280905791071621, "id": 5761584803110062891, "text": "Lorem consectetuer dolor Java purus sed", "createdAt": 1698325242000} to topic twitter-topic
+2023-10-26 16:00:42 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1450; Timestamp 1698325242158
+2023-10-26 16:00:43 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text Maecenas amet porttitor ultricies congue Microservices malesuada congue libero sending to kafka topic twitter-topic
+2023-10-26 16:00:43 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 8641348737391743655, "id": 2482826724298596895, "text": "Maecenas amet porttitor ultricies congue Microservices malesuada congue libero", "createdAt": 1698325243000} to topic twitter-topic
+2023-10-26 16:00:43 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1484; Timestamp 1698325243160
+2023-10-26 16:00:44 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text Lorem magna porttitor Kafka sit malesuada sending to kafka topic twitter-topic
+2023-10-26 16:00:44 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 4801259016785593571, "id": 1238481385663156441, "text": "Lorem magna porttitor Kafka sit malesuada", "createdAt": 1698325244000} to topic twitter-topic
+2023-10-26 16:00:44 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1459; Timestamp 1698325244161
+2023-10-26 16:00:45 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text amet ipsum massa congue Lorem Spring malesuada amet posuere sending to kafka topic twitter-topic
+2023-10-26 16:00:45 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 3421656054291199083, "id": 8836567545475612593, "text": "amet ipsum massa congue Lorem Spring malesuada amet posuere", "createdAt": 1698325245000} to topic twitter-topic
+2023-10-26 16:00:45 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1485; Timestamp 1698325245162
+2023-10-26 16:00:46 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text pulvinar sed ipsum porttitor dolor Microservices elit Fusce porttitor ipsum sending to kafka topic twitter-topic
+2023-10-26 16:00:46 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 1355877985822103062, "id": 73589447278452034, "text": "pulvinar sed ipsum porttitor dolor Microservices elit Fusce porttitor ipsum", "createdAt": 1698325246000} to topic twitter-topic
+2023-10-26 16:00:46 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1451; Timestamp 1698325246163
+2023-10-26 16:00:47 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text consectetuer Fusce Maecenas purus ipsum magna Spring dolor Maecenas magna porttitor Fusce sending to kafka topic twitter-topic
+2023-10-26 16:00:47 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 8786459991923150892, "id": 4480854300215761576, "text": "consectetuer Fusce Maecenas purus ipsum magna Spring dolor Maecenas magna porttitor Fusce", "createdAt": 1698325247000} to topic twitter-topic
+2023-10-26 16:00:47 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1460; Timestamp 1698325247166
+2023-10-26 16:00:48 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text magna ultricies posuere posuere Fusce Spring porttitor libero congue sending to kafka topic twitter-topic
+2023-10-26 16:00:48 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 6250881176268603316, "id": 7848879265809207498, "text": "magna ultricies posuere posuere Fusce Spring porttitor libero congue", "createdAt": 1698325248000} to topic twitter-topic
+2023-10-26 16:00:48 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1486; Timestamp 1698325248167
+2023-10-26 16:00:49 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text Fusce adipiscing dolor Lorem Microservices elit porttitor Lorem sending to kafka topic twitter-topic
+2023-10-26 16:00:49 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 1838236474264596016, "id": 8065521831248117825, "text": "Fusce adipiscing dolor Lorem Microservices elit porttitor Lorem", "createdAt": 1698325249000} to topic twitter-topic
+2023-10-26 16:00:49 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1487; Timestamp 1698325249168
+2023-10-26 16:00:50 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text adipiscing lectus magna amet massa congue consectetuer lectus Java amet pulvinar congue purus malesuada sed sed sending to kafka topic twitter-topic
+2023-10-26 16:00:50 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 2653688032894252277, "id": 7017857686803497797, "text": "adipiscing lectus magna amet massa congue consectetuer lectus Java amet pulvinar congue purus malesuada sed sed", "createdAt": 1698325250000} to topic twitter-topic
+2023-10-26 16:00:50 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 1452; Timestamp 1698325250170
+2023-10-26 16:00:51 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text lectus purus pulvinar sed sit Spring congue ipsum sed Lorem sending to kafka topic twitter-topic
+2023-10-26 16:00:51 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 445879727748693402, "id": 2557071378340334060, "text": "lectus purus pulvinar sed sit Spring congue ipsum sed Lorem", "createdAt": 1698325251000} to topic twitter-topic
+2023-10-26 16:00:51 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 1488; Timestamp 1698325251171
+2023-10-26 16:00:52 [pool-3-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status text adipiscing Lorem lectus sed purus malesuada sed Java amet lectus pulvinar malesuada lectus sending to kafka topic twitter-topic
+2023-10-26 16:00:52 [pool-3-thread-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Sending message {"userId": 5144299452592050690, "id": 8017708219010868341, "text": "adipiscing Lorem lectus sed purus malesuada sed Java amet lectus pulvinar malesuada lectus", "createdAt": 1698325252000} to topic twitter-topic
+2023-10-26 16:00:52 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.s.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 1461; Timestamp 1698325252172

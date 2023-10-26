@@ -20,4 +20,4 @@ spring:
 
 jasypt:
   encryptor:
-    password: sectret123
+    password: ${JASYPT_ENCRYPTOR_PASSWORD}

@@ -15,7 +15,7 @@ import org.springframework.data.elasticsearch.annotations.FieldType;
 @Document (indexName = "#{elasticConfigData.indexName}")
 @Data
 @Builder
-public class IndexModelImpl implements IndexModel {
+public class TwitterIndexModel implements IndexModel {
 
     @JsonProperty
     private String id;

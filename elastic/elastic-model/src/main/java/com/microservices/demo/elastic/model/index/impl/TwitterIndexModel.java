@@ -6,11 +6,12 @@ import com.microservices.demo.elastic.model.index.IndexModel;
 
 import lombok.Builder;
 import lombok.Data;
-import org.joda.time.LocalDateTime;
 import org.springframework.data.elasticsearch.annotations.DateFormat;
 import org.springframework.data.elasticsearch.annotations.Document;
 import org.springframework.data.elasticsearch.annotations.Field;
 import org.springframework.data.elasticsearch.annotations.FieldType;
+
+import java.time.LocalDateTime;
 
 @Document (indexName = "#{elasticConfigData.indexName}")
 @Data

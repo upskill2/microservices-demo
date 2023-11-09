@@ -14,6 +14,7 @@ public class TestJasypt {
 
         String encryptedText = encryptor.encrypt("123");
         String plainText = encryptor.decrypt(encryptedText);
+
         System.out.println (encryptedText);
         System.out.println (plainText);
 

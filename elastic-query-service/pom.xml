@@ -8,12 +8,8 @@
     </parent>
 
     <artifactId>elastic-query-service</artifactId>
-    <packaging>jar</packaging>
 
-    <name>elastic-query-service</name>
-    <url>http://maven.apache.org</url>
-
-    <properties>
+   <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 

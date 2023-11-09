@@ -4,6 +4,7 @@ spring:
   profiles:
     active: elastic_query
   cloud:
+    bootstrap: false
     config:
       name: elastic-query-service,config-client
       uri: http://localhost:8888

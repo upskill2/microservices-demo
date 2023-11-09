@@ -3,5 +3,5 @@ server:
 
 logging:
   level:
-    ROOT: DEBUG
+    ROOT: INFO #DEBUG
     org.springframework.cloud.config: DEBUG

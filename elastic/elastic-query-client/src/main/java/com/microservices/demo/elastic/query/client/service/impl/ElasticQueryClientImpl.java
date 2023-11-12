@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
 
 @Service
 @Slf4j
-@ConditionalOnProperty (name = "elastic-config.use-repository", havingValue = "false")
+//@ConditionalOnProperty (name = "elastic-config.use-repository", havingValue = "false")
 public class ElasticQueryClientImpl implements ElasticQueryClient<TwitterIndexModel> {
 
     private final ElasticConfigData elasticConfigData;

@@ -6,25 +6,21 @@ import com.microservices.demo.elastic.query.client.exception.ElasticQueryClientE
 import com.microservices.demo.elastic.query.client.repository.TwitterElasticsearchQueryRepository;
 import com.microservices.demo.elastic.query.client.service.ElasticQueryClient;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
-import org.springframework.context.annotation.DependsOn;
-import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
-//@Primary
+@Primary
 @Service
 @Slf4j
-@ConditionalOnProperty (name = "elastic-config.use-repository", havingValue = "true", matchIfMissing = true)
-//@DependsOn ({"twitterElasticsearchQueryRepositoryImpl"})
-public class TwitterElasticsearchQueryRepositoryImpl implements ElasticQueryClient<TwitterIndexModel> {
+//@ConditionalOnProperty (name = "elastic-config.use-repository", havingValue = "true", matchIfMissing = true)
+public class TwitterElasticsearchQueryRepositoryClient implements ElasticQueryClient<TwitterIndexModel> {
 
     private final TwitterElasticsearchQueryRepository repository;
 
-    public TwitterElasticsearchQueryRepositoryImpl (final TwitterElasticsearchQueryRepository repository) {
+    public TwitterElasticsearchQueryRepositoryClient (final TwitterElasticsearchQueryRepository repository) {
         this.repository = repository;
     }
 

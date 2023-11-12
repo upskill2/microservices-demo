@@ -7,6 +7,7 @@ import com.microservices.demo.elastic.query.client.util.ElasticQueryUtil;
 import com.microservices.demo.elastic.query.client.exception.ElasticQueryClientException;
 import com.microservices.demo.elastic.query.client.service.ElasticQueryClient;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.data.elasticsearch.core.ElasticsearchOperations;
 import org.springframework.data.elasticsearch.core.SearchHit;
 import org.springframework.data.elasticsearch.core.SearchHits;
@@ -19,6 +20,7 @@ import java.util.stream.Collectors;
 
 @Service
 @Slf4j
+@ConditionalOnProperty (name = "elastic-config.use-repository", havingValue = "false")
 public class ElasticQueryClientImpl implements ElasticQueryClient<TwitterIndexModel> {
 
     private final ElasticConfigData elasticConfigData;

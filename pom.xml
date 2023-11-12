@@ -24,12 +24,13 @@
         <module>config-server</module>
         <module>kafka/kafka-consumer</module>
         <module>kafka-to-elastic-service</module>
-        <module>elastic</module>
+<!--        <module>elastic</module>-->
         <module>elastic/elastic-model</module>
         <module>elastic/elastic-config</module>
         <module>elastic/elastic-index-client</module>
-        <module>common-util</module>
+        <module>elastic/elastic-query-client</module>
         <module>elastic-query-service</module>
+        <module>common-util</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -145,7 +146,6 @@
                 <version>${project.version}</version>
             </dependency>
 
-
             <dependency>
                 <groupId>com.microservices.demo</groupId>
                 <artifactId>elastic-model</artifactId>
@@ -169,6 +169,12 @@
                 <artifactId>elastic-index-client</artifactId>
                 <version>${project.version}</version>
             </dependency>
+
+<!--            <dependency>
+                <groupId>com.microservices.demo</groupId>
+                <artifactId>elastic-query-client</artifactId>
+                <version>${project.version}</version>
+            </dependency>-->
 
             <dependency>
                 <groupId>com.microservices.demo</groupId>

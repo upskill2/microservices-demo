@@ -13,5 +13,6 @@ public class ElasticConfigData {
     private String connectionUrl;
     private Integer connectionTimeoutMs;
     private Integer socketTimeoutMs;
+    private boolean useRepository;
 
 }

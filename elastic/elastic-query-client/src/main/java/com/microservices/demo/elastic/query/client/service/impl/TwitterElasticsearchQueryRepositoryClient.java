@@ -29,7 +29,6 @@ public class TwitterElasticsearchQueryRepositoryClient implements ElasticQueryCl
         final Optional<TwitterIndexModel> searchResult = repository.findById (id);
         log.info ("Documents with id {} retrieved successfully", searchResult.orElseThrow (() ->
                 new ElasticQueryClientException ("No document found at elasticsearch with id: " + id)).getId ());
-
         return searchResult.get ();
     }
 
@@ -42,9 +41,9 @@ public class TwitterElasticsearchQueryRepositoryClient implements ElasticQueryCl
 
     @Override
     public List<TwitterIndexModel> getAllIndexModels () {
-        final Iterable<TwitterIndexModel> result = repository.findAll ();
-
-        final List<TwitterIndexModel> listFromIterable = CollectionUtil.getInstance ().getListFromIterable (result);
+        final Iterable<TwitterIndexModel> result0 = repository.findTop100ByText ("Lorem");
+       // final Iterable<TwitterIndexModel> result = repository.findAll ();
+        final List<TwitterIndexModel> listFromIterable = CollectionUtil.getInstance ().getListFromIterable (result0);
         log.info ("{} of documents retrieved successfully", listFromIterable.size ());
         return listFromIterable;
     }

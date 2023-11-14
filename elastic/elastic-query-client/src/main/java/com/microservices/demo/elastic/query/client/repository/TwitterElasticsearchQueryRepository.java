@@ -11,4 +11,5 @@ public interface TwitterElasticsearchQueryRepository extends ElasticsearchReposi
 
     List<TwitterIndexModel> findByText (String text);
 
+    List<TwitterIndexModel> findTop100ByText (String text);
 }

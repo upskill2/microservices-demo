@@ -28,3 +28,12 @@ user-config:
   username: user
   password: 123
   role: USER
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+
+security:
+  paths-to-ignore: /api/docs

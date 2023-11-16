@@ -15,6 +15,6 @@ public class ElasticQueryWebClientResponseModel {
 
     private String id;
     private Long userId;
-    private String test;
+    private String text;
     private LocalDateTime createdAt;
 }

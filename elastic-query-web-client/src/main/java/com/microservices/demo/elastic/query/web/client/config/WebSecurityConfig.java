@@ -37,12 +37,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         auth
                 .inMemoryAuthentication ()
                 .withUser (userConfigData.getUsername ())
-                .password ("{noop}" + userConfigData.getPassword ())
+                .password ("{noop}123")
                 .roles (userConfigData.getRole ());
     }
 
-    @Bean
+/*    @Bean
     public PasswordEncoder passwordEncoder (){
         return new BCryptPasswordEncoder ();
-    }
+    }*/
 }

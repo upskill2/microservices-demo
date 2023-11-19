@@ -11,9 +11,11 @@ elastic-query-web-client:
     max-in-memory-size: 10485760
     content-type: "application/vnd.api.v1+json"
     accept-type: "application/vnd.api.v1+json"
-    base-url: "http://elastic-query-service/elastic-query-service/documents"
-
-
+    base-url: "http://localhost:8183/elastic-query-service/documents"
+  query:
+    method: POST
+    uri: "/get-document-by-text"
+    accept: ${elastic-query-web-client.webclient.accept-type}
 
 spring:
   thymeleaf:
@@ -21,5 +23,5 @@ spring:
 
 user-config:
   username: user
-  password: ENC(LjfH44I61a57HIj/E9AnwK0+oNoAUgttc9nw2CpPV4MVt5cI0Yw91QKRnAkWTvN0)
+  password: 123
   role: USER

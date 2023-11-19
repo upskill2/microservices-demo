@@ -10,6 +10,8 @@ import org.springframework.context.annotation.Configuration;
 public class ElasticQueryWebClientConfigData {
 
     private WebClient webClient;
+    private Query query;
+
     @Data
     public static class WebClient {
         private Integer connectTimeoutMs;
@@ -19,7 +21,13 @@ public class ElasticQueryWebClientConfigData {
         private String contentType;
         private String acceptType;
         private String baseUrl;
+    }
 
+    @Data
+    public static class Query {
+        private String method;
+        private String accept;
+        private String uri;
     }
 
 }

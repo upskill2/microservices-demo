@@ -41,6 +41,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .roles (userConfigData.getRole ());
     }
 
+
 /*    @Bean
     public PasswordEncoder passwordEncoder (){
         return new BCryptPasswordEncoder ();

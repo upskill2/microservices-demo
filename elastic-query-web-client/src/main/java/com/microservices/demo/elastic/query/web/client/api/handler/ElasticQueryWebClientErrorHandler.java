@@ -16,7 +16,6 @@ import java.util.Map;
 @Slf4j
 @ControllerAdvice
 public class ElasticQueryWebClientErrorHandler {
-
     @ExceptionHandler (org.springframework.security.access.AccessDeniedException.class)
     public String handle(AccessDeniedException e, Model model) {
         log.error("Access denied exception!");

@@ -10,6 +10,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -29,6 +30,9 @@ public class ElasticDocumentController {
     public ElasticDocumentController (final ElasticQueryService queryService) {
         this.queryService = queryService;
     }
+
+    @Value ("${server.port}")
+    public String port;
 
     @Operation (summary = "Get all documents from elasticsearch")
     @ApiResponses (value = { @ApiResponse (responseCode = "200", description = "Successful response", content = {
@@ -95,10 +99,10 @@ public class ElasticDocumentController {
         List<ElasticQueryServiceResponseModel> response = queryService.
                 getDocumentByText (request.getText ())
                         .stream ()
-                                .limit (10000)
+                                .limit (100)
                                         .collect(Collectors.toList());
 
-        log.info ("Elastic returned {} of documents", response.size ());
+        log.info ("Elastic returned {} of documents on port {}", response.size (), port);
         return ResponseEntity.ok (response);
     }
 

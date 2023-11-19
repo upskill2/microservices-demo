@@ -46,7 +46,7 @@ public class QueryController {
         log.info ("Querying with text {}", requestModel.getText ());
         List<ElasticQueryWebClientResponseModel> responseModels =elasticQueryWebClient.getDataByText (requestModel)
                 .stream ()
-                .limit (10)
+                .limit (1000)
                 .collect (ArrayList::new, ArrayList::add, ArrayList::addAll);
         model.addAttribute ("elasticQueryWebClientResponseModels", responseModels);
         model.addAttribute ("searchText", requestModel.getText ());

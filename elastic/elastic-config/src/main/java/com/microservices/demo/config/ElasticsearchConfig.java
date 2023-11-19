@@ -78,7 +78,7 @@ public class ElasticsearchConfig extends AbstractElasticsearchConfiguration {
     private void setMaxWindowResult (final RestHighLevelClient client) throws IOException {
         UpdateSettingsRequest updateSettingsRequest = new UpdateSettingsRequest (elasticConfigData.getIndexName ())
                 .settings (Settings.builder ()
-                                .put ("index.max_result_window", 25000) // Set max_result_window
+                                .put ("index.max_result_window", 30000) // Set max_result_window
                         .put ("index.max_rescore_window", 400)
                         .put ("index.max_inner_result_window", 400)
                 );

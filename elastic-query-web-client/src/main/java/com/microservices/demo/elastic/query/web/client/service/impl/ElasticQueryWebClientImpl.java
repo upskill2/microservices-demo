@@ -18,6 +18,7 @@ import org.springframework.web.reactive.function.BodyInserters;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 
+import java.time.Duration;
 import java.util.List;
 
 @Service
@@ -38,7 +39,6 @@ public class ElasticQueryWebClientImpl implements ElasticQueryWebClient {
         log.info ("Querying by text: {}", requestModel.getText ());
         return  getWebClient (requestModel)
                 .bodyToFlux (ElasticQueryWebClientResponseModel.class)
-                .take (10)
                 .collectList ()
                 .block ();
 

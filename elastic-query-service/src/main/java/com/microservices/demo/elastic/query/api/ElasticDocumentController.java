@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import javax.validation.constraints.NotEmpty;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping (value = "/documents", produces = "application/vnd.api.v1+json")
@@ -91,7 +92,12 @@ public class ElasticDocumentController {
     @PostMapping ("/get-document-by-text")
     public @ResponseBody ResponseEntity<List<ElasticQueryServiceResponseModel>> getDocumentsByText (
             @RequestBody @Valid ElasticQueryServiceRequestModel request) {
-        List<ElasticQueryServiceResponseModel> response = queryService.getDocumentByText (request.getText ());
+        List<ElasticQueryServiceResponseModel> response = queryService.
+                getDocumentByText (request.getText ())
+                        .stream ()
+                                .limit (10000)
+                                        .collect(Collectors.toList());
+
         log.info ("Elastic returned {} of documents", response.size ());
         return ResponseEntity.ok (response);
     }

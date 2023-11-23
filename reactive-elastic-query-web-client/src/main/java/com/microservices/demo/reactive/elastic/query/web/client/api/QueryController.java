@@ -30,8 +30,9 @@ public class QueryController {
         return "index";
     }
 
+    @GetMapping ("/home")
     public String home (Model model) {
-        model.addAttribute ("elasticQueryResponseModel",
+        model.addAttribute ("elasticQueryClientRequestModel",
                 ElasticQueryWebClientResponseModel.builder ().build ());
         return "home";
     }
@@ -41,23 +42,18 @@ public class QueryController {
         return "error";
     }
 
-    @PostMapping (value = "/query-by-text")
-    public String queryByText (@Valid ElasticQueryWebClientRequestModel requestModel, Model model) {
-
-        Flux<ElasticQueryWebClientResponseModel> response = elasticQueryWebClient.getDataByText (requestModel);
-        response = response.log ();
-
-        IReactiveDataDriverContextVariable reactiveDataDrivenMode =
-                new ReactiveDataDriverContextVariable (response, 1);
-        model.addAttribute ("elasticQueryClientResponseModels", reactiveDataDrivenMode);
-        model.addAttribute ("searchText", requestModel.getText ());
-        model.addAttribute ("elasticQueryResponseModel",
-                ElasticQueryWebClientResponseModel.builder ().build ());
-
-        log.info ("Returning from reactive client controller for text {}", requestModel.getText ());
-
+    @PostMapping(value = "/query-by-text")
+    public String queryByText(@Valid ElasticQueryWebClientRequestModel requestModel, Model model) {
+        Flux<ElasticQueryWebClientResponseModel> responseModel = elasticQueryWebClient.getDataByText(requestModel);
+        responseModel = responseModel.log();
+        IReactiveDataDriverContextVariable reactiveData =
+                new ReactiveDataDriverContextVariable(responseModel, 1);
+        model.addAttribute("elasticQueryClientResponseModels", reactiveData);
+        model.addAttribute("searchText", requestModel.getText());
+        model.addAttribute("elasticQueryClientRequestModel",
+                ElasticQueryWebClientRequestModel.builder().build());
+        log.info("Returning from reactive client controller for text {} !", requestModel.getText());
         return "home";
-
     }
 
 }

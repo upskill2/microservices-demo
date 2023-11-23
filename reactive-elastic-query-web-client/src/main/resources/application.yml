@@ -9,7 +9,7 @@ elastic-query-web-client:
     base-url: 'http://localhost:8183/reactive-elastic-query-service/documents'
   query-by-text:
     method: POST
-    uri: "/get-doc-by-text"
+    uri: "/get-document-by-text"
     accept: ${elastic-query-web-client.webclient.accept-type}
 
 server:

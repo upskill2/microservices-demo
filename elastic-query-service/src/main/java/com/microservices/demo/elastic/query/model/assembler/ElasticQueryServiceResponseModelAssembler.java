@@ -1,9 +1,9 @@
 package com.microservices.demo.elastic.query.model.assembler;
 
+import com.microservices.demo.common.model.ElasticQueryServiceResponseModel;
+import com.microservices.demo.common.transformer.ElasticToResponseModelTransformer;
 import com.microservices.demo.elastic.model.index.impl.TwitterIndexModel;
 import com.microservices.demo.elastic.query.api.ElasticDocumentController;
-import com.microservices.demo.elastic.query.model.ElasticQueryServiceResponseModel;
-import com.microservices.demo.elastic.query.transformer.ElasticToResponseModelTransformer;
 import org.springframework.hateoas.server.mvc.RepresentationModelAssemblerSupport;
 import org.springframework.stereotype.Component;
 

@@ -1,7 +1,7 @@
 package com.microservices.demo.elastic.query.api;
 
-import com.microservices.demo.elastic.query.model.ElasticQueryServiceRequestModel;
-import com.microservices.demo.elastic.query.model.ElasticQueryServiceResponseModel;
+import com.microservices.demo.common.model.ElasticQueryServiceRequestModel;
+import com.microservices.demo.common.model.ElasticQueryServiceResponseModel;
 import com.microservices.demo.elastic.query.model.ElasticQueryServiceResponseModelV2;
 import com.microservices.demo.elastic.query.service.ElasticQueryService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -12,7 +12,6 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;

@@ -25,15 +25,15 @@ public class ElasticDocumentController {
     }
 
 
-    @PostMapping (value = "/get-doc-by-text",
+    @PostMapping (value = "/get-document-by-text",
     produces = MediaType.TEXT_EVENT_STREAM_VALUE,
     consumes = MediaType.APPLICATION_JSON_VALUE)
     public Flux<ElasticQueryServiceResponseModel> getDocumentsByText (
             @RequestBody @Valid ElasticQueryServiceRequestModel requestModel) {
         log.info ("Querying elastic with text: {}", requestModel.getText ());
-        final Flux<ElasticQueryServiceResponseModel> response = elasticQueryService.getTweetsByText (requestModel.getText ());
-        response.log ();
-        log.info ("Returning elastic with text: {} completed", requestModel.getText ());
+        Flux<ElasticQueryServiceResponseModel> response = elasticQueryService.getTweetsByText (requestModel.getText ());
+         response =    response.log ();
+               log.info ("Returning response: {}", response.log ());
         return response;
     }
 }

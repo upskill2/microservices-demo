@@ -6,11 +6,13 @@ import com.microservices.demo.elastic.model.index.impl.TwitterIndexModel;
 import com.microservices.demo.reactive.elastic.query.service.business.ReactiveElasticQueryClient;
 import com.microservices.demo.reactive.elastic.query.service.repository.ElasticQueryRepository;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 
 import java.time.Duration;
 
 @Slf4j
+@Service
 public class ReactiveElasticQueryClientImpl<T extends IndexModel> implements ReactiveElasticQueryClient<T> {
 
     private final ElasticQueryRepository elasticQueryRepository;

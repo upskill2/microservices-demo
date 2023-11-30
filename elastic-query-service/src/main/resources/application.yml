@@ -3,11 +3,18 @@ logging:
     root: INFO
 
 spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8081/auth/realms/microservices_realm
+          jwk-set-uri: http://localhost:8081/auth/realms/microservices_realm/openid-connect/certs
   main:
     allow-circular-references: true
 
 elastic-query-service:
   version: v1
+  custom-audience: elastic-query-service
 
 server:
   port: 8183

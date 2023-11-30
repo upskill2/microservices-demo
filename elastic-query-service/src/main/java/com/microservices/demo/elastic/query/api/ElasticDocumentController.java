@@ -12,6 +12,7 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PostAuthorize;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
@@ -35,13 +36,14 @@ public class ElasticDocumentController {
     @Value ("${server.port}")
     public String port;
 
+    @PostAuthorize ("hasPermission(returnObject, 'READ')")
     @Operation (summary = "Get all documents from elasticsearch")
-    @ApiResponses (value = { @ApiResponse (responseCode = "200", description = "Successful response", content = {
+    @ApiResponses (value = {@ApiResponse (responseCode = "200", description = "Successful response", content = {
             @Content (mediaType = "application/vnd.api.v1+json",
                     schema = @Schema (implementation = ElasticQueryServiceResponseModel.class)),
     }),
-    @ApiResponse (responseCode = "500", description = "Internal server error"),
-    @ApiResponse (responseCode = "400", description = "Not Found")
+            @ApiResponse (responseCode = "500", description = "Internal server error"),
+            @ApiResponse (responseCode = "400", description = "Not Found")
     })
     @GetMapping ("/")
     public @ResponseBody ResponseEntity<List<ElasticQueryServiceResponseModel>> getAllDocuments () {
@@ -52,8 +54,9 @@ public class ElasticDocumentController {
     }
 
 
+    @PostAuthorize ("hasPermission(#id, 'ElasticQueryServiceResponseModel', 'READ')")
     @Operation (summary = "Get documents from elasticsearch by id")
-    @ApiResponses (value = { @ApiResponse (responseCode = "200", description = "Successful response", content = {
+    @ApiResponses (value = {@ApiResponse (responseCode = "200", description = "Successful response", content = {
             @Content (mediaType = "application/vnd.api.v1+json",
                     schema = @Schema (implementation = ElasticQueryServiceResponseModel.class)),
     }),
@@ -69,7 +72,7 @@ public class ElasticDocumentController {
     }
 
     @Operation (summary = "Get all documents from elasticsearch by id v2")
-    @ApiResponses (value = { @ApiResponse (responseCode = "200", description = "Successful response", content = {
+    @ApiResponses (value = {@ApiResponse (responseCode = "200", description = "Successful response", content = {
             @Content (mediaType = "application/vnd.api.v2+json",
                     schema = @Schema (implementation = ElasticQueryServiceResponseModelV2.class)),
     }),
@@ -84,11 +87,10 @@ public class ElasticDocumentController {
         return ResponseEntity.ok (getTransformedResponse (response));
     }
 
-
-
-    @PreAuthorize ("hasRole('APP_USER_ROLE') || hasAuthority('SCOPE_APP_USER_ROLE')")
+    @PreAuthorize ("hasRole('APP_USER_ROLE') || hasRole('APP_USER_ROLE') || hasAuthority('SCOPE_APP_SUPER_USER_ROLE')")
+    @PostAuthorize ("hasPermission(returnObject, 'READ')")
     @Operation (summary = "Get all documents from elasticsearch by text")
-    @ApiResponses (value = { @ApiResponse (responseCode = "200", description = "Successful response", content = {
+    @ApiResponses (value = {@ApiResponse (responseCode = "200", description = "Successful response", content = {
             @Content (mediaType = "application/vnd.api.v1+json",
                     schema = @Schema (implementation = ElasticQueryServiceResponseModel.class)),
     }),
@@ -100,9 +102,9 @@ public class ElasticDocumentController {
             @RequestBody @Valid ElasticQueryServiceRequestModel request) {
         List<ElasticQueryServiceResponseModel> response = queryService.
                 getDocumentByText (request.getText ())
-                        .stream ()
-                                .limit (100)
-                                        .collect(Collectors.toList());
+                .stream ()
+                .limit (100)
+                .collect (Collectors.toList ());
 
         log.info ("Elastic returned {} of documents on port {}", response.size (), port);
         return ResponseEntity.ok (response);

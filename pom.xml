@@ -36,6 +36,7 @@
         <module>elastic-query-web-client-common</module>
         <module>reactive-elastic-query-service</module>
         <module>reactive-elastic-query-web-client</module>
+        <module>kafka-streams-service</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -105,6 +106,12 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-oauth2-resource-server</artifactId>
+                <version>${spring-boot.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-oauth2-client</artifactId>
                 <version>${spring-boot.version}</version>
             </dependency>
 

@@ -18,4 +18,10 @@ public interface UserPermissionRepository extends JpaRepository<UserPermission, 
             "and u.username = :username")
     Optional<List<UserPermission>> findPermissionByUsername (@Param ("username") String username);
 
+    @Query(nativeQuery = true, value = "select p.user_permission_id as id, u.username, d.document_id, p.permission_type " +
+            "from users u, user_permissions p, documents d " +
+            "where u.id = p.user_id " +
+            "and d.id = p.document_id ")
+    Optional<List<UserPermission>> findAllPermissions ();
+
 }

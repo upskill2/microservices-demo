@@ -6,6 +6,7 @@ import com.microservices.demo.elastic.query.service.QueryUserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
@@ -22,6 +23,7 @@ public class QueryUserServiceImpl implements QueryUserService {
     @Override
     public Optional<List<UserPermission>> finaAllUserPermissionsByUsername (final String username) {
         log.info ("Querying user permissions for username: {}", username);
+        List<UserPermission> allPermissions = userPermissionRepository.findAllPermissions ().orElse (Collections.emptyList ());
         return userPermissionRepository.findPermissionByUsername (username);
     }
 }

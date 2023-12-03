@@ -8,10 +8,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.oauth2.jwt.Jwt;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 
 import static com.microservices.demo.elastic.query.security.Constants.NA;
@@ -24,7 +21,7 @@ public class TwitterQueryUserJwtConverter implements Converter<Jwt, AbstractAuth
     private static final String USERNAME_CLAIM = "preferred_username";
     private static final String DEFAULT_ROLE_PREFIX = "ROLE_";
     private static final String DEFAULT_SCOPE_PREFIX = "SCOPE_";
-    private static final String SCOPE_SEPARATOR = "";
+    private static final String SCOPE_SEPARATOR = " ";
 
     private final TwitterQueryUserDetailService twitterQueryUserDetailService;
 
@@ -68,10 +65,10 @@ public class TwitterQueryUserJwtConverter implements Converter<Jwt, AbstractAuth
 
     private Collection<String> getScopes (final Jwt jwt) {
         Object scopes = jwt.getClaims ().get (SCOPE_CLAIM);
-        if (scopes instanceof Collection) {
-            return ((Collection<String>) scopes).stream ()
-                    .map (authorities -> DEFAULT_SCOPE_PREFIX + authorities.toUpperCase ())
-                    .collect (Collectors.toList ());
+        if (scopes instanceof String) {
+            return Arrays.stream(((String) scopes).split(SCOPE_SEPARATOR))
+                    .map(authority -> DEFAULT_SCOPE_PREFIX + authority.toUpperCase())
+                    .collect(Collectors.toList());
         }
        return Collections.emptyList ();
     }

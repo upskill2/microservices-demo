@@ -61,6 +61,7 @@
         <springdoc-openapi-ui.version>1.5.0</springdoc-openapi-ui.version>
         <thymeleaf-extras-springsecurity5.version>3.0.3.RELEASE</thymeleaf-extras-springsecurity5.version>
         <postgresql.version>42.2.18</postgresql.version>
+        <spring-webflux.version>2.7.8</spring-webflux.version>
     </properties>
 
     <repositories>
@@ -240,6 +241,12 @@
 
             <dependency>
                 <groupId>io.confluent</groupId>
+                <artifactId>kafka-streams-avro-serde</artifactId>
+                <version>${kafka-avro-serializer.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.confluent</groupId>
                 <artifactId>kafka-avro-serializer</artifactId>
                 <version>${kafka-avro-serializer.version}</version>
                 <exclusions>
@@ -283,8 +290,7 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-webflux</artifactId>
-               <!-- <version>${spring-boot.version}</version>-->
-                <version>2.7.8</version>
+                <version>${spring-webflux.version}</version>
             </dependency>
 
             <dependency>
@@ -295,7 +301,7 @@
             <dependency>
                 <groupId>org.apache.kafka</groupId>
                 <artifactId>kafka-clients</artifactId>
-                <version>2.5.1</version>
+                <version>${kafka.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.retry</groupId>

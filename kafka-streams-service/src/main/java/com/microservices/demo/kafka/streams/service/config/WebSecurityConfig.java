@@ -1,3 +1,4 @@
+/*
 package com.microservices.demo.kafka.streams.service.config;
 
 import com.microservices.demo.kafka.streams.service.security.KafkaStreamsUserDetailsService;
@@ -78,4 +79,4 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         return new KafkaStreamsUserJwtConverter(kafkaStreamsUserDetailsService);
     }
 
-}
+}*/

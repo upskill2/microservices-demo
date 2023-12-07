@@ -1,3 +1,4 @@
+/*
 package com.microservices.demo.kafka.streams.service.security;
 
 import org.springframework.core.convert.converter.Converter;
@@ -74,3 +75,4 @@ public class KafkaStreamsUserJwtConverter implements Converter<Jwt, AbstractAuth
         return Collections.emptyList();
     }
 }
+*/

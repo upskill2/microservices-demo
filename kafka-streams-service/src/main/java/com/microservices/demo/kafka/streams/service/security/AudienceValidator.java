@@ -1,3 +1,4 @@
+/*
 package com.microservices.demo.kafka.streams.service.security;
 
 import com.microservices.demo.config.KafkaStreamsServiceConfigData;
@@ -30,3 +31,4 @@ public class AudienceValidator implements OAuth2TokenValidator<Jwt> {
         }
     }
 }
+*/

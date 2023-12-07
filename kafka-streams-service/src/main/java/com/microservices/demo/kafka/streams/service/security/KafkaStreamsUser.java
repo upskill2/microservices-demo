@@ -1,3 +1,4 @@
+/*
 package com.microservices.demo.kafka.streams.service.security;
 
 import lombok.Builder;
@@ -57,3 +58,4 @@ public class KafkaStreamsUser implements UserDetails {
         return true;
     }
 }
+*/

@@ -1,3 +1,4 @@
+/*
 package com.microservices.demo.kafka.streams.service.security;
 
 import org.springframework.security.core.userdetails.UserDetails;
@@ -15,3 +16,4 @@ public class KafkaStreamsUserDetailsService implements UserDetailsService {
                 .build();
     }
 }
+*/

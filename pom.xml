@@ -37,6 +37,7 @@
         <module>reactive-elastic-query-service</module>
         <module>reactive-elastic-query-web-client</module>
         <module>kafka-streams-service</module>
+        <module>analytics-service</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -193,6 +194,12 @@
 
             <dependency>
                 <groupId>com.microservices.demo</groupId>
+                <artifactId>kafka-model</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.microservices.demo</groupId>
                 <artifactId>app-config-data</artifactId>
                 <version>${project.version}</version>
             </dependency>
@@ -268,13 +275,6 @@
                     </exclusion>
                 </exclusions>
             </dependency>
-
-            <dependency>
-                <groupId>com.microservices.demo</groupId>
-                <artifactId>kafka-model</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-
             <dependency>
                 <groupId>com.microservices.demo</groupId>
                 <artifactId>elastic-query-service-common</artifactId>
